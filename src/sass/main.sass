@@ -1,0 +1,43 @@
+@import './utils/variables'
+@import './utils/mixins'
+@import './utils/functions'
+@import './utils/classes'
+
+@import './components/buttons'
+
+@import './sections/header'
+@import './sections/footer'
+@import './sections/hero'
+@import './sections/experiences'
+@import './sections/formations'
+@import './sections/projects'
+
+
+*, *::before, *::after
+  margin: 0
+  padding: 0
+  box-sizing: inherit
+
+html
+  box-sizing: border-box
+
+body
+  font-family: $primaryFont
+  background-color: $mainBackground
+  color: $primaryColor
+  min-height: 100vh
+  display: flex
+  flex-direction: column
+
+a
+  color: $primaryColor
+  text-decoration: none
+
+a, button
+  font-family: $primaryFont
+
+::selection
+  background: $labelColor
+  color: $mainBackground
+
+

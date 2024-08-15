@@ -1,0 +1,54 @@
+.header
+  width: 100%
+  padding: toEm(25) 0
+
+  @include media-query(666px)
+    padding: toEm(20) 0
+
+  &__content
+    @include displayFlex(row, space-between, center)
+
+    @include media-query(666px)
+      align-items: flex-start
+
+    &--logo
+      @include displayFlex(row, center, center)
+
+    &--nav
+      @include displayFlex(row, center, center)
+      column-gap: toEm(30)
+
+      @include media-query(666px)
+        @include displayFlex(column, center, flex-end)
+        row-gap: toEm(5)
+
+      a
+        font-size: toRem(18)
+        font-weight: 400
+        font-style: italic
+        position: relative
+        transition: color .3s ease-in-out
+        font-family: $primaryFont
+
+        @include media-query(666px)
+          font-size: toRem(16)
+
+        &:hover
+          color: $primaryHoverColor
+
+          &::after
+            width: 100%
+
+        &::after
+          content: ''
+          position: absolute
+          left: 0
+          bottom: -6px
+          height: 1px
+          width: 0
+          background-color: $primaryHoverColor
+          transition: all .3s ease-in-out
+
+          @include media-query(666px)
+            bottom: 0
+            height: 1px
