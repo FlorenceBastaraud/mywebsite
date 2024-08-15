@@ -1,0 +1,15 @@
+{
+  "name": "mywebsite",
+  "version": "1.0.0",
+  "description": "My personal website",
+  "scripts": {
+    "node-sass": "sass -w src/sass/:src/css/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FlorenceBastaraud/mywebsite.git"
+  },
+  "devDependencies": {
+    "node-sass": "^9.0.0"
+  }
+}
