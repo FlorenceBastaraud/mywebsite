@@ -1,0 +1,31 @@
+{
+  "total": 4,
+  "data": [
+    {
+      "date": "2020 - 2021",
+      "title": "IFOCOP Intégrateur Développeur Web",
+      "description": "Bac+3 : Développement web.",
+      "mention": "Mention Bien"
+    },
+    {
+      "date": " 2019 - 2020",
+      "title": "GRETA Web design spécialité Développement Web",
+      "description": "Bac+2 : Web Design, Développement Web et Gestion de projet.",
+      "mention": "Major de promo"
+    },
+    {
+      "date": " 2016 - 2018",
+      "title": "Université des Antilles, Licence de Droit",
+      "description": "Bac +2 : L1 et L2 validées (DEUG)",
+      "mention": ""
+    },
+    {
+      "date": "2014",
+      "title": "Lycée général Faustin Fléret",
+      "description": "Baccalauréat littéraire",
+      "mention": "Mention Bien"
+    }
+  ]
+}
+
+

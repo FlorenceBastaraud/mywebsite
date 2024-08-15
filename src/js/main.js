@@ -27,7 +27,6 @@ document.addEventListener('DOMContentLoaded', (e) => {
 
 
 
-
   // experiences
   const displayExperiences = async () => {
 
@@ -35,7 +34,6 @@ document.addEventListener('DOMContentLoaded', (e) => {
     const response = await fetch(`${url}/src/data/experiences.json`);
     const experiences = await response.json();
 
-    console.log(experiences);
     const experiencesListWrapper = document.getElementById('experiences-list');
     let experiencesItems = ``;
 
@@ -59,11 +57,79 @@ document.addEventListener('DOMContentLoaded', (e) => {
     });
 
 
-    experiencesListWrapper.innerHTML = experiencesItems;
+    experiencesListWrapper.innerHTML += experiencesItems;
 
   } 
 
   displayExperiences();
+
+
+  // education
+  const displayEducation = async () => {
+
+    const url = location.origin;
+    const response = await fetch(`${url}/src/data/education.json`);
+    const education = await response.json();
+
+    const educationListWrapper = document.getElementById('education-list');
+    let educationItems = ``;
+
+    education.data.map(education => {
+
+      const {date, title, description, mention} = education;
+
+      educationItems += `
+
+            <div class="education__item">
+              <h4 class="education__item--title">
+                <i class="fas fa-network-wired icon"></i>
+                <span>${title}</span>
+              </h4>
+              <div class="education__item--date">${date}</div>
+              <p class="education__item--description">${description}</p>
+              <span class="education__item--mention">${mention}</span>
+
+            </div>
+      
+      `;
+
+    });
+
+
+    educationListWrapper.innerHTML += educationItems;
+
+  } 
+
+  displayEducation();
+
+
+  // career tabs
+  document.querySelectorAll('.career-tabs__item').forEach(tabItem => {
+    
+    tabItem.addEventListener('click', (e) => {
+
+      let currentTabItem = e.target.getAttribute('data-career');
+      
+      if(currentTabItem == 'experiences'){
+
+        document.getElementById('experiences-list').classList.remove('display-none');
+        document.getElementById('education-list').classList.add('display-none');
+        document.querySelector('.career-tabs__item[data-career="experiences"]').classList.add('active');
+        document.querySelector('.career-tabs__item[data-career="education"]').classList.remove('active');
+
+      } else if(currentTabItem == 'education') {
+
+        document.getElementById('education-list').classList.remove('display-none');
+        document.getElementById('experiences-list').classList.add('display-none');
+        document.querySelector('.career-tabs__item[data-career="experiences"]').classList.remove('active');
+        document.querySelector('.career-tabs__item[data-career="education"]').classList.add('active');
+
+
+      }
+
+    });
+    
+  })
   
 
 
