@@ -28,6 +28,8 @@ body
   min-height: 100vh
   display: flex
   flex-direction: column
+  width: 100%
+  overflow-x: hidden
 
   @media (min-width: 667px)
     overflow-y: hidden
@@ -50,6 +52,10 @@ a, button
   display: flex
   overflow-x: hidden
   scroll-behavior: smooth
+
+  @include media-query(666px)
+    @include displayFlex(column, center, flex-start)
+    gap: 50px
 
   section
     min-width: 100vw

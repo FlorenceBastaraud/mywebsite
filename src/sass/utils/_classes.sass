@@ -24,8 +24,15 @@
 .display-none
   display: none!important
 
-.main-title
 
-.title
+.main-title
   margin: 0
   font-family: $titleFont
+
+.title
+  letter-spacing: 15px
+  font-style: italic
+  display: none
+
+  @include media-query(666px)
+    display: block

@@ -1,0 +1,38 @@
+{
+  "total": 6,
+  "years": 3,
+  "data": [
+    {
+      "date": "Février 2023 - Avril 2024 (1 an et 2 mois)",
+      "society": "Epresspack",
+      "description": "Développeuse web front pour divers clients de l'entreprise. Build. Debuggage. Daily meetings. • Technos utilisées: Javascript, Php, Html/Css, Sass, Vue.js, Jquery."
+    },
+    {
+      "date": "Sept 2021 - Aout 2022 (1 an)",
+      "society": "GCAPE'LEAD",
+      "description": "Conception et création de sites vitrines. • Webdesign. • Technos utilisées: React, Javascript, Php, Mysql, Html/Css."
+    },
+    {
+      "date": "Mars 2021 - Juillet 2021 (5 mois)",
+      "society": "Marketing Lab",
+      "description": "Refonte du logiciel CTI de l'entreprise. • Additif de fonctionnalités web au logiciel de CTI. • Campagnes emailing. Technos utilisées: Java, Jsp, Mysql, Servlets, Php, Html/Css."
+    },
+    {
+      "date": "Février 2020 - Juillet 2020 (6 mois)",
+      "society": "Eden Prim +",
+      "description": "Concepion et réalisation de la partie front du site web de l'entreprise sur thème enfant personnalisé ainsi que la mise en place du Plugin WooCommerce et de ses différents paramétrages. Par la suite, maintenance du site et divers ajouts de fonctionnalités sur le site."
+    },
+    {
+      "date": "Janvier 2020 (1 mois)",
+      "society": "BeloTennis Club",
+      "description": "Conception et réalisation de la partie front du site web du club."
+    },
+    {
+      "date": "Aout 2019 (1 mois)",
+      "society": "Antilles Imprimerie",
+      "description": "Dans le cade d'un stage au sein de l'entreprise, j'ai été chargée d'éffectuer des changements sur la partie front du site, sous la tutelle de mon responsable et tuteur."
+    }
+  ]
+}
+
+
