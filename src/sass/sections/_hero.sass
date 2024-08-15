@@ -1,101 +1,52 @@
-.add-channel
-  padding: toEm(80) 0
-  position: relative
-  @include displayFlex(column, flex-start, center)
-  column-gap: 40px
+.main__hero
 
-  @include media-query(1350px)
-    justify-content: center
-    align-content: center
-
-  &__title
-    font-size: toRem(52)
-    font-weight: 400
-    color: $primaryColor
-    text-align: center
+  &--wrapper
     width: 100%
-    @include media-query(1240px)
-      font-size: toRem(42)
+    padding: toEm(30) toEm(40)
+    @include displayFlex(column, center, center)
+    gap: 25px
 
-    @include media-query(666px)
-        font-size: toRem(32)
-
-    @include media-query(440px)
-        font-size: toRem(26)
-
-
-  &__form
-    width: 80%
-    @include displayFlex(column, flex-start, center)
-    row-gap: 20px
-
-    fieldset
-      border: none
-      width: 100%
-      margin-bottom: 10px
-      @include displayFlex(column, flex-start, center)
-      font-size: toRem(16)
-      
-      & > *
-        width: 80%
-
-        @include media-query(600px)
-          width: 100%
-
-      legend
-        text-transform: uppercase
-        font-weight: 500
-        margin-bottom: 15px
-
-      label
-        margin: 7px 0
-        font-weight: 400
-        font-style: italic
-
-      input
-        border: none
-        padding: toEm(6) toEm(10)
-        font-size: toRem(16)
-        border-radius: 40px
-        position: relative
-
-        &[type="radio"]
-          accent-color: $labelColor
-
-        &::placeholder
-          visibility: hidden
-
-
-    a
-      position: relative
+    .image
+      width: 250px
+      height: 250px
+      border-radius: 52% 48% 70% 30% / 51% 55% 45% 49%
+      background-color: $primaryColor
+      overflow: hidden
+      transition: .3s ease-in-out
 
       &:hover
-        &::after
-          display: flex
+        background-color: $secondBackgroundColor
+      
+      img
+        width: 100%
+        height: 100%
+        object-fit: cover
 
-      &::after
-        content: ''
-        position: absolute
-        width: 98%
-        height: 1px
-        background-color: #000000d1
-        left: 0
-        bottom: -1px
-        display: none
+    .content
+      @include displayFlex(column, center, center)
+      gap: 14px
+        
+      .title
+        font-size: 63px
+        text-align: center
+        font-style: italic
 
-    .submit
-      cursor: pointer
-      font-size: toRem(16)
-      font-weight: 400
-      padding: toEm(12) toEm(40)
-      background: $labelColor
+      .description
+        font-weight: 500
+        
+      .cv
+        background-color: $primaryColor
+        color: $mainBackground
+        border-radius: 40px
+        border: 1px solid $primaryColor
+        padding: toEm(5) toEm(17)
+        text-transform: lowercase
+        font-size: toRem(16)
+        @include displayFlex(row, center, center)
+        gap: 8px
+        transition: .3s ease-in-out
 
-      @include media-query(1240px)
-        font-size: toRem(14)
-
-      @include media-query(666px)
-        font-size: toRem(12)
-
-      &.submit-add-channel
-        background-color: #f4ac9a
-
+        &:hover
+          background-color: $mainBackground
+          color: $primaryHoverColor
+          border-color: $primaryHoverColor

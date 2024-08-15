@@ -1,13 +1,13 @@
 .footer
   margin-top: auto
-  padding: toEm(58) 0 toEm(22)
+  padding: toEm(10) 0
 
   @include media-query(666px)
     padding: toEm(20) 0  
 
   &__content
     @include displayFlex(column, flex-start, flex-start)
-    row-gap: toEm(20)
+    row-gap: toEm(15)
 
     &--links
       width: 100%
@@ -18,8 +18,12 @@
         row-gap: toEm(15)
     
       .menu
-        @include displayFlex(column, flex-end, flex-start)
-        row-gap: toEm(2)
+        display: none
+        gap: 15px
+
+        @include media-query(666px)
+          @include displayFlex(column, flex-start, flex-start)
+          gap: 3px
 
         a
           font-size: toRem(16)
@@ -64,7 +68,8 @@
       text-align: center
       
       @include media-query(666px)
-          font-size: toRem(12)
+        font-size: toRem(12)
+        text-align: left
 
       a, span
         font-size: toRem(13)

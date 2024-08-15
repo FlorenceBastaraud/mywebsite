@@ -29,6 +29,9 @@ body
   display: flex
   flex-direction: column
 
+  @media (min-width: 667px)
+    overflow-y: hidden
+
 a
   color: $primaryColor
   text-decoration: none
@@ -37,7 +40,16 @@ a, button
   font-family: $primaryFont
 
 ::selection
-  background: $labelColor
+  background: $secondBackgroundColor
   color: $mainBackground
 
 
+.main
+  width: 100vw
+  margin: 0 auto
+  display: flex
+  overflow-x: hidden
+  scroll-behavior: smooth
+
+  section
+    min-width: 100vw
