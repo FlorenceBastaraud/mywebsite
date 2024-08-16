@@ -13,9 +13,10 @@
       background-color: $primaryColor
       overflow: hidden
       transition: .3s ease-in-out
+      @include animation('animateBlob 13s infinite')
 
       &:hover
-        background-color: $secondBackgroundColor
+        background-color: $labelColor
       
       img
         width: 100%

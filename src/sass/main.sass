@@ -2,14 +2,15 @@
 @import './utils/mixins'
 @import './utils/functions'
 @import './utils/classes'
+@import './utils/keyframes'
 
 @import './components/buttons'
 
 @import './sections/header'
 @import './sections/footer'
 @import './sections/hero'
+@import './sections/skills'
 @import './sections/career'
-@import './sections/formations'
 @import './sections/projects'
 
 
@@ -48,14 +49,17 @@ a, button
 
 .main
   width: 100vw
+  height: calc(100vh - 70.4px - 78.2px)
   margin: 0 auto
   display: flex
-  overflow-x: hidden
+  overflow: hidden
   scroll-behavior: smooth
 
   @include media-query(666px)
     @include displayFlex(column, center, flex-start)
-    gap: 50px
+    gap: 70px
+    height: unset
+    overflow-y: auto
 
   section
     min-width: 100vw

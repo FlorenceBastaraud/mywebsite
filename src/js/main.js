@@ -26,6 +26,44 @@ document.addEventListener('DOMContentLoaded', (e) => {
   });
 
 
+  // skills
+  const displayskills = async () => {
+
+    const url = location.origin;
+    const response = await fetch(`${url}/src/data/skills.json`);
+    const skills = await response.json();
+
+    const frontSkillsListWrapper = document.getElementById('skills__front--list');
+    let frontSkillsItems = ``;
+
+    skills.front.map(skill => {
+      frontSkillsItems += `<li class="skill">${skill}</li>`;
+    });
+
+    frontSkillsListWrapper.innerHTML += frontSkillsItems;
+
+    const backSkillsListWrapper = document.getElementById('skills__back--list');
+    let backSkillsItems = ``;
+
+    skills.back.map(skill => {
+      backSkillsItems += `<li class="skill">${skill}</li>`;
+    });
+
+    backSkillsListWrapper.innerHTML += backSkillsItems;
+
+    const moreSkillsListWrapper = document.getElementById('skills__more--list');
+    let moreSkillsItems = ``;
+
+    skills.more.map(skill => {
+      moreSkillsItems += `<li class="skill">${skill}</li>`;
+    });
+
+    moreSkillsListWrapper.innerHTML += moreSkillsItems;
+
+  } 
+
+  displayskills();
+  
 
   // experiences
   const displayExperiences = async () => {

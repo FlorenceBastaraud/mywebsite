@@ -1,8 +1,13 @@
 .footer
-  margin-top: auto
+  position: fixed
+  bottom: 0
+  width: 100%
   padding: toEm(10) 0
 
   @include media-query(666px)
+    margin-top: auto
+    position: unset
+    bottom: unset
     padding: toEm(20) 0  
 
   &__content
