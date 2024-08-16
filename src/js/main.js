@@ -3,22 +3,44 @@ document.addEventListener('DOMContentLoaded', (e) => {
 
   // horizontal scrolling
   const mainWrapper = document.querySelector('main');
+  const projectsWrapper = document.getElementById('projects');
 
   mainWrapper.addEventListener('wheel', (e) => {
-    
-    if(screen.width > 666){
-
-      e.preventDefault();
-
-      let currentShownElement = e.target.getAttribute('id');
-
-      document.querySelector('body').setAttribute('view', currentShownElement);
-      mainWrapper.setAttribute('view', currentShownElement);
-
+        
+    if(screen.width > 840){
+      
       if(e.deltaY > 0){
-        mainWrapper.scrollLeft += screen.width;
+              
+        if(projectsWrapper.getBoundingClientRect().x == 0){
+                    
+          mainWrapper.classList.add('vertical-scroll');
+          document.body.classList.add('vertical-scroll');
+          document.querySelector('footer').classList.add('vertical-scroll');
+          
+        } else {
+          
+          e.preventDefault();
+          mainWrapper.classList.remove('vertical-scroll');
+          document.body.classList.remove('vertical-scroll');
+          document.querySelector('footer').classList.remove('vertical-scroll');
+
+          mainWrapper.scrollLeft += screen.width;
+
+        }
+        
       } else {
-        mainWrapper.scrollLeft -= screen.width;      
+
+        
+        if(projectsWrapper.getBoundingClientRect().top > 0){
+          mainWrapper.classList.remove('vertical-scroll');
+          document.body.classList.remove('vertical-scroll');
+          document.querySelector('footer').classList.remove('vertical-scroll');
+
+          mainWrapper.scrollLeft -= screen.width;
+
+        }
+                
+
       }
 
     }
@@ -168,8 +190,135 @@ document.addEventListener('DOMContentLoaded', (e) => {
     });
     
   })
-  
 
+
+  // projects
+  const displayProjects = async (tech = 'all') => {
+
+    const url = location.origin;
+    const response = await fetch(`${url}/src/data/projects.json`);
+    const projects = await response.json();
+    const projectsSelected = [];
+    projects.data.map(project => {
+      if(tech !== 'all'){
+
+        if(project.technologies.tags.includes(tech)){
+            projectsSelected.push(project);
+        }
+    
+      } else {
+        projectsSelected.push(project);
+      }
+
+    });
+        
+    const projectsListWrapper = document.querySelector('.projects__flux');
+    let projectsItems = ``;
+
+    projectsSelected.map(project => {
+
+      const {name, link, github, description, thumbnail, technologies} = project;
+
+      projectsItems += `
+
+            <div class="projects__flux--item">
+
+              <div class="image">
+                <img src="${url}/src/images/projects/${thumbnail}" alt="${name}">
+              </div>
+
+              <div class="content">
+
+                <div class="content__infos">
+                  <h4 class="content__infos--name">${name}</h4>
+                  <p class="content__infos--description">${description}</p>
+                  <h5 class="content__infos--stack"><span class="label">Stack: </span>${technologies.string}</h5>
+                </div>
+
+                <div class="content__links">
+                  <a href="${github}" class="github secondary-cta" title="View project files" target="_blank">Git</a>
+                  <a href="${link}" class="live primary-cta" title="View live" target="_blank">Live</a>
+                </div>
+
+              </div>
+
+            </div>
+      
+      `;
+
+    });
+
+
+    projectsListWrapper.innerHTML = projectsItems;
+
+  } 
+  
+  displayProjects();
+
+
+  // projects filters
+  const displayFilters = async () => {
+
+    const url = location.origin;
+    const response = await fetch(`${url}/src/data/projects.json`);
+    const projects = await response.json();
+
+    const projectsFiltersListWrapper = document.querySelector('.projects__filters--list');
+    let projectsFiltersItems = ``;
+
+    const filtersValues = [];
+
+    projects.data.map(project => {
+      
+      project.technologies.tags.map(technology => {
+        filtersValues.push(technology);
+      });
+
+    });
+
+    const filters = Array.from(new Set(filtersValues)).sort();
+    
+    projectsFiltersItems += `<li class="filter active" data-filter="all">all</li>`;
+
+    filters.map(filter => {
+      if(filter !== 'prestashop'){
+        projectsFiltersItems += `<li class="filter" data-filter="${filter}">${filter}</li>`;
+      }
+    })
+
+    projectsFiltersListWrapper.innerHTML = projectsFiltersItems;
+
+    
+
+
+    const filterElements = document.querySelectorAll('.filter');
+    
+    filterElements.forEach(filter => {
+
+
+
+      filter.addEventListener('click', (e) => {
+
+        let currFilter = e.target.getAttribute('data-filter');
+
+        e.target.classList.add('active');
+        let otherFilters = document.querySelectorAll(`.filter:not([data-filter="${currFilter}"])`);
+        
+        otherFilters.forEach(otherFilter => {
+            otherFilter.classList.remove('active');   
+        })
+        
+
+        return displayProjects(currFilter);
+        
+
+      });
+          
+    })
+
+  }
+
+  displayFilters();
 
 
 });

@@ -12,7 +12,7 @@
     @media (min-width: 1055px)
       padding-top: toEm(40)
 
-    @include media-query(666px)
+    @include media-query(840px)
       @include displayFlex(column, flex-start, center)
       gap: 20px
 
@@ -26,15 +26,16 @@
       grid-template-columns: repeat(2, 1fr)
       gap: 20px
       position: relative
+      transition: .3s ease-in-out
 
-      @media (min-width: 667px) and (max-width: 1140px)
+      @media (min-width: 841px) and (max-width: 1140px)
         gap: 10px
 
       @include media-query(740px)
         gap: 10px
         padding: toEm(10) toEm(30)
 
-      @include media-query(666px)
+      @include media-query(840px)
         grid-template-columns: 1fr
         gap: 30px
         padding: 0 toEm(20)
@@ -51,10 +52,10 @@
         font-weight: 500
         letter-spacing: toRem(3)
 
-        @media (min-width: 667px) and (max-width: 1140px)
+        @media (min-width: 841px) and (max-width: 1140px)
           top: 0
 
-        @include media-query(666px)
+        @include media-query(840px)
           display: none
 
       &__item
@@ -68,12 +69,12 @@
           background-color: $buttonBackgroundColor
           border-radius: 10px
 
-          @include media-query(666px)
+          @include media-query(840px)
             border-radius: 20px
             scale: 1.025
 
             
-        @include media-query(666px)
+        @include media-query(840px)
           padding: toEm(10) toEm(20)
           border: 1px solid $secondBackgroundColor
           border-radius: 20px
@@ -83,7 +84,7 @@
           gap: 7px
           color: $secondBackgroundColor
 
-          @media (min-width: 667px) and (max-width: 967px)
+          @media (min-width: 841px) and (max-width: 967px)
             font-size: toRem(13)
           
         &--date
@@ -92,13 +93,13 @@
           font-weight: 500
           font-size: toRem(15)
 
-          @media (min-width: 667px) and (max-width: 967px)
+          @media (min-width: 841px) and (max-width: 967px)
             font-size: toRem(12)
 
         &--description
           font-size: toRem(15)
 
-          @media (min-width: 667px) and (max-width: 967px)
+          @media (min-width: 841px) and (max-width: 967px)
             font-size: toRem(13)
 
 
@@ -109,7 +110,7 @@
         width: fit-content
         padding: toEm(2) toEm(15)
 
-        @include media-query(666px)
+        @include media-query(840px)
           width: unset
           padding: toEm(10) toEm(20)
           border: 1px solid $secondBackgroundColor
@@ -138,7 +139,7 @@
       @include media-query(1340px)
         left: 5px
 
-      @include media-query(666px)
+      @include media-query(840px)
         @include displayFlex(row, center, center)
         position: relative
         left: 0
@@ -153,7 +154,7 @@
         border-radius: 8px
         @include displayFlex(row, center, center)
 
-        @include media-query(666px)
+        @include media-query(840px)
           padding: toEm(7) toEm(15)
           
         &:hover

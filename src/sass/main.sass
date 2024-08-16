@@ -31,9 +31,13 @@ body
   flex-direction: column
   width: 100%
   overflow-x: hidden
+  transition: .3s ease-in-out
 
-  @media (min-width: 667px)
+  @media (min-width: 841px)
     overflow-y: hidden
+
+  &.vertical-scroll
+    overflow-y: auto
 
 a
   color: $primaryColor
@@ -54,12 +58,16 @@ a, button
   display: flex
   overflow: hidden
   scroll-behavior: smooth
+  transition: .3s ease-in-out
 
-  @include media-query(666px)
+  @include media-query(840px)
     @include displayFlex(column, center, flex-start)
-    gap: 70px
+    gap: 130px
     height: unset
     overflow-y: auto
+
+  &.vertical-scroll
+    height: 100%
 
   section
     min-width: 100vw

@@ -1,0 +1,105 @@
+{
+  "total": 6,
+  "data": [
+    {
+      "name": "Zobbies",
+      "link": "",
+      "github": "https://github.com/FlorenceBastaraud/zobbies",
+      "description": "",
+      "thumbnail": "default.jpg",
+      "technologies": {
+        "string": "Html/Css, Sass, Javascript, Express, Socket.io",
+        "tags": [
+          "html",
+          "css",
+          "sass",
+          "javascript",
+          "express",
+          "node",
+          "socket-io"
+        ]
+      }
+    },
+    {
+      "name": "LibraryBlooms",
+      "link": "",
+      "github": "https://github.com/FlorenceBastaraud/libraryblooms",
+      "description": "",
+      "thumbnail": "default.jpg",
+      "technologies": { 
+        "string": "",
+        "tags": [
+          "html",
+          "css",
+          "javascript"
+        ]
+      }
+    },
+    {
+      "name": "Eden Prim +",
+      "link": "",
+      "github": null,
+      "description": "L'entreprise Eden Prim + m'a embauchée pour la conception et la réalisation de leur site web. Le mot d'ordre était rustique.",
+      "thumbnail": "edenprim-pa.png",
+      "technologies": {
+        "string": "Prestashop, Html, Css, Javascript, PHP.",
+        "tags": [
+          "prestashop",
+          "html",
+          "css",
+          "javascript",
+          "php"
+        ]
+      }
+    },
+    {
+      "name": "BeloTennis Club",
+      "link": "",
+      "github": null,
+      "description": "J'ai réalisée la partie front du site du club de Tennis, BeloTennis. Quant au back, j'ai été chargé de m'occuper de la réalisation d'un formulaire avec envoi de messages par e-mail.",
+      "thumbnail": "belotennis-pa.png",
+      "technologies": {
+        "string": "Vanilla Javascript, Html, Css, Php.",
+        "tags": [
+          "html",
+          "css",
+          "javascript",
+          "php"
+        ]
+      }
+    },
+    {
+      "name": "Jeu de lancer de dés",
+      "link": "https://florencebastaraud.github.io/dice-game/",
+      "github": "https://github.com/FlorenceBastaraud/dice-game",
+      "description": "Réalisation d'un jeu de lancer de dés virtuel. Le jeu se gagne lorsque l'ensemble des 10 dés affichent le même chiffre.",
+      "thumbnail": "dice-game.png",
+      "technologies": {
+        "string": "ReactJS, Javascript, Html, Css.",
+        "tags": [
+          "html",
+          "css",
+          "javascript",
+          "react"
+        ]
+      }
+    },
+    {
+      "name": "CONVERSES",
+      "link": "https://florencebastaraud.github.io/converses-landing-page/",
+      "github": "https://github.com/FlorenceBastaraud/converses-landing-page",
+      "description": "Landing page d'un site de converse sneakers.",
+      "thumbnail": "converses-landing-page.png",
+      "technologies": {
+        "string": "Javascript, Html, Css.",
+        "tags": [
+          "html",
+          "css",
+          "javascript"
+        ]
+      }
+    }
+  ]
+}
+
+

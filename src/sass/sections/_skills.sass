@@ -9,7 +9,7 @@
     @include displayFlex(column, center, center)
     width: 100%
 
-    @include media-query(666px)
+    @include media-query(840px)
       gap: toRem(30)
 
     .skills
@@ -17,7 +17,7 @@
       height: 100%
       @include displayFlex(row, space-evenly, flex-start)
 
-      @include media-query(666px)
+      @include media-query(840px)
         @include displayFlex(column, flex-start, center)
         gap: toRem(20)
 
@@ -30,7 +30,7 @@
         @include media-query(920px)
           padding: toEm(10)
 
-        @include media-query(666px)
+        @include media-query(840px)
           padding: toEm(10) toEm(25)
 
         &:hover, &.active
@@ -41,7 +41,7 @@
           @include media-query(920px)
             scale: 1.1
 
-          @include media-query(666px)
+          @include media-query(840px)
             scale: 1
 
           &.skills__front
@@ -53,11 +53,11 @@
           &.skills__more
             border-radius: 42% 20% 44% 20% / 20% 20% 20% 36% 
 
-          @include media-query(920px)
-            &.skills__front,
-            &.skills__back,
-            &.skills__more
-              border-radius: 15%
+          // @include media-query(920px)
+          //   &.skills__front,
+          //   &.skills__back,
+          //   &.skills__more
+          //     border-radius: 15%
 
         &.active
           background: linear-gradient(340deg, #ff9a9a 0%, $labelColor 100%)

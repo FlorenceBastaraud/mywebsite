@@ -1,0 +1,173 @@
+.main__projects
+  background-color: $primaryColor
+  color: $mainBackground
+  @include displayFlex(row, center, center)
+  width: 100%
+  height: 100%
+
+  &--wrapper
+    @include displayFlex(column, center, center)
+    width: 100%
+    height: 100%
+
+    @include media-query(1355px)
+      padding: toEm(20)
+
+    @include media-query(840px)
+      padding: toEm(50) 0 toEm(80)
+      gap: toRem(30)
+
+    .projects
+      width: 100%
+      height: 100%
+      @include displayFlex(row, space-between, flex-start)
+      gap: 30px
+      padding: toEm(50) toEm(10)
+
+      @include media-query(840px)
+        @include displayFlex(column, center, center)
+        padding: 0 toEm(30)
+        gap: 10px
+
+      &__filters
+        height: 100%
+        
+        &--list
+          list-style-type: none
+          @include displayFlex(column, flex-start, center)
+          gap: toRem(15)
+          padding: toEm(20) toEm(15)
+          border-radius: 10px
+          border-right: 0.4px solid $labelColor
+
+          @include media-query(840px)
+            @include displayFlex(row, center, center)
+            flex-wrap: wrap
+            border-right: none
+                  
+          .filter
+            font-size: toRem(18)
+            font-weight: 400
+            position: relative
+            text-transform: lowercase
+            transition: color .3s ease-in-out
+            font-family: $primaryFont
+            cursor: pointer
+            transition: .3s ease-in-out
+
+            @include media-query(840px)
+              font-size: toRem(16)
+
+            &:hover, &.active
+              color: $labelColor
+              scale: 1.06
+
+            &.active
+              &::after
+                width: 100%
+
+            &::after
+              content: ''
+              position: absolute
+              left: 0
+              bottom: -6px
+              height: 1px
+              width: 0
+              background-color: $labelColor
+              transition: all .3s ease-in-out
+
+              @include media-query(840px)
+                bottom: 0
+                height: 1px
+
+            
+      &__flux
+        display: grid
+        grid-template-columns: repeat(2, 1fr)
+        gap: toRem(15)
+
+        @include media-query(1355px)
+          grid-template-columns: 1fr
+
+        @include media-query(840px)
+          gap: toRem(20)
+
+        @include media-query(490px)
+          gap: toRem(25)
+
+        &--item
+          background-color: $mainBackground
+          color: $primaryColor
+          display: grid
+          grid-template-columns: auto 1fr
+          gap: 10px
+          border-radius: 40px
+          overflow: hidden
+          transition: .5s ease-in-out
+
+          @include media-query(490px)
+            @include displayFlex(column, center, center)
+            gap: 0
+
+          &:hover
+            scale: 1.02
+
+          .image
+            width: 200px
+            min-height: 200px
+            height: 100%
+            overflow: hidden
+
+            @include media-query(490px)
+              width: 100%
+              height: 100px
+
+            img
+              width: 100%
+              height: 100%
+              object-fit: cover
+
+          .content
+            padding: toEm(15) toEm(10)
+            @include displayFlex(column, space-between, flex-start)
+            gap: toRem(15)
+
+            @include media-query(490px)
+              @include displayFlex(column, space-between, center)
+
+            &__infos
+              @include displayFlex(column, flex-start, flex-start)
+              gap: toRem(5)
+
+              @include media-query(490px)
+                @include displayFlex(column, flex-start, center)
+
+              &--description
+                font-style: italic
+
+              &--stack
+                font-weight: 400
+
+                .label
+                  font-weight: 600
+
+            &__links
+              @include displayFlex(row, flex-start, flex-start)
+              gap: toRem(8)
+
+              a
+                padding: toEm(2) toEm(20)
+                border-radius: 20px
+                font-size: toRem(14)
+
+              .live
+                &:hover
+                  background-color: $primaryColor
+                  color: $mainBackground
+                  scale: 1.1
+
+              .github
+                &:hover
+                  background-color: $labelColor
+                  border-color: $labelColor
+                  color: $primaryColor

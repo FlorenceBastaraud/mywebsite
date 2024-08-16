@@ -3,8 +3,15 @@
   bottom: 0
   width: 100%
   padding: toEm(10) 0
+  transition: .3s ease-in-out
 
-  @include media-query(666px)
+  @include media-query(840px)
+    margin-top: auto
+    position: unset
+    bottom: unset
+    padding: toEm(20) 0
+
+  &.vertical-scroll
     margin-top: auto
     position: unset
     bottom: unset
@@ -18,7 +25,7 @@
       width: 100%
       @include displayFlex(row, space-between, flex-end)
 
-      @include media-query(666px)
+      @include media-query(840px)
         @include displayFlex(column, flex-start, flex-start)
         row-gap: toEm(15)
     
@@ -26,7 +33,7 @@
         display: none
         gap: 15px
 
-        @include media-query(666px)
+        @include media-query(840px)
           @include displayFlex(column, flex-start, flex-start)
           gap: 3px
 
@@ -36,7 +43,7 @@
           position: relative
           transition: color .3s ease-in-out
 
-          @include media-query(666px)
+          @include media-query(840px)
             font-size: toRem(14)
 
           &:hover
@@ -72,7 +79,7 @@
       width: 100%
       text-align: center
       
-      @include media-query(666px)
+      @include media-query(840px)
         font-size: toRem(12)
         text-align: left
 
@@ -83,7 +90,7 @@
       a
         transition: color .3s ease-in-out
 
-        @include media-query(666px)
+        @include media-query(840px)
           font-size: toRem(12)
 
         &:hover
