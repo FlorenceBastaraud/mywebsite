@@ -6,7 +6,7 @@
       "link": "",
       "github": "https://github.com/FlorenceBastaraud/zobbies",
       "description": "",
-      "thumbnail": "default.jpg",
+      "thumbnail": "zobbies.png",
       "technologies": {
         "string": "Html/Css, Sass, Javascript, Express, Socket.io",
         "tags": [
@@ -25,7 +25,7 @@
       "link": "",
       "github": "https://github.com/FlorenceBastaraud/libraryblooms",
       "description": "",
-      "thumbnail": "default.jpg",
+      "thumbnail": "librayblooms.png",
       "technologies": { 
         "string": "",
         "tags": [
