@@ -15,7 +15,9 @@
     margin-top: auto
     position: unset
     bottom: unset
-    padding: toEm(20) 0  
+    padding: toEm(20) 0
+    background-color: $primaryColor
+    color: $mainBackground
 
   &__content
     @include displayFlex(column, flex-start, flex-start)
@@ -89,6 +91,7 @@
 
       a
         transition: color .3s ease-in-out
+        color: inherit
 
         @include media-query(840px)
           font-size: toRem(12)

@@ -207,6 +207,8 @@
   position: unset;
   bottom: unset;
   padding: 1.25em 0;
+  background-color: #070707;
+  color: #FFF;
 }
 .footer__content {
   display: flex;
@@ -301,6 +303,7 @@
 }
 .footer__content--copyrights a {
   transition: color 0.3s ease-in-out;
+  color: inherit;
 }
 @media (max-width: 840px) {
   .footer__content--copyrights a {

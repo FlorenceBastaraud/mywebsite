@@ -38,9 +38,9 @@
     },
     {
       "name": "LibraryBlooms",
-      "link": "Application de livres",
+      "link": "https://florencebastaraud.github.io/libraryblooms/",
       "github": "https://github.com/FlorenceBastaraud/libraryblooms",
-      "description": "",
+      "description": "Application de livres",
       "thumbnail": "libraryblooms.png",
       "technologies": { 
         "string": "Html/Css, Javascript, ReactJs.",
