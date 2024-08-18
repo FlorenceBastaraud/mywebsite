@@ -2,6 +2,7 @@
 
   &--wrapper
     width: 100%
+    height: 100%
     padding: toEm(30) toEm(40)
     @include displayFlex(column, center, center)
     gap: 25px
@@ -34,3 +35,7 @@
 
       .description
         font-weight: 500
+
+      .cv
+        span, i
+          pointer-events: none

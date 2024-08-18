@@ -313,6 +313,7 @@
 
 .main__hero--wrapper {
   width: 100%;
+  height: 100%;
   padding: 1.875em 2.5em;
   display: flex;
   flex-direction: column;
@@ -355,6 +356,9 @@
 }
 .main__hero--wrapper .content .description {
   font-weight: 500;
+}
+.main__hero--wrapper .content .cv span, .main__hero--wrapper .content .cv i {
+  pointer-events: none;
 }
 
 .main__skills {

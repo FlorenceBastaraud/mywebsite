@@ -2,10 +2,26 @@
   "total": 6,
   "data": [
     {
-      "name": "Zobbies",
-      "link": "",
-      "github": "https://github.com/FlorenceBastaraud/zobbies",
+      "name": "My website",
+      "link": "https://florence-b.com/",
+      "github": "https://github.com/FlorenceBastaraud/mywebsite",
       "description": "",
+      "thumbnail": "mywebsite.png",
+      "technologies": {
+        "string": "Html/Css, Sass, Javascript",
+        "tags": [
+          "html",
+          "css",
+          "sass",
+          "javascript"
+        ]
+      }
+    },
+    {
+      "name": "Zobbies",
+      "link": "https://florence-b.com/zobbies",
+      "github": "https://github.com/FlorenceBastaraud/zobbies",
+      "description": "Réseau social basé sur des centres d'intérêts, avec systême d'authentification et des channels de discussions instantannée.",
       "thumbnail": "zobbies.png",
       "technologies": {
         "string": "Html/Css, Sass, Javascript, Express, Socket.io",
@@ -22,25 +38,26 @@
     },
     {
       "name": "LibraryBlooms",
-      "link": "",
+      "link": "Application de livres",
       "github": "https://github.com/FlorenceBastaraud/libraryblooms",
       "description": "",
-      "thumbnail": "librayblooms.png",
+      "thumbnail": "libraryblooms.png",
       "technologies": { 
-        "string": "",
+        "string": "Html/Css, Javascript, ReactJs.",
         "tags": [
           "html",
           "css",
-          "javascript"
+          "javascript",
+          "react"
         ]
       }
     },
     {
       "name": "Eden Prim +",
-      "link": "",
+      "link": "https://web.archive.org/web/20220101210826/https://edenprim-plus.fr/fr/",
       "github": null,
       "description": "L'entreprise Eden Prim + m'a embauchée pour la conception et la réalisation de leur site web. Le mot d'ordre était rustique.",
-      "thumbnail": "edenprim-pa.png",
+      "thumbnail": "edenprim.png",
       "technologies": {
         "string": "Prestashop, Html, Css, Javascript, PHP.",
         "tags": [
@@ -54,12 +71,12 @@
     },
     {
       "name": "BeloTennis Club",
-      "link": "",
+      "link": null,
       "github": null,
       "description": "J'ai réalisée la partie front du site du club de Tennis, BeloTennis. Quant au back, j'ai été chargé de m'occuper de la réalisation d'un formulaire avec envoi de messages par e-mail.",
-      "thumbnail": "belotennis-pa.png",
+      "thumbnail": "belotennis.png",
       "technologies": {
-        "string": "Vanilla Javascript, Html, Css, Php.",
+        "string": "Javascript, Html, Css, Php.",
         "tags": [
           "html",
           "css",
@@ -75,7 +92,7 @@
       "description": "Réalisation d'un jeu de lancer de dés virtuel. Le jeu se gagne lorsque l'ensemble des 10 dés affichent le même chiffre.",
       "thumbnail": "dice-game.png",
       "technologies": {
-        "string": "ReactJS, Javascript, Html, Css.",
+        "string": "ReactJs, Javascript, Html, Css.",
         "tags": [
           "html",
           "css",

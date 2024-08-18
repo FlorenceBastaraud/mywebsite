@@ -217,7 +217,10 @@ document.addEventListener('DOMContentLoaded', (e) => {
 
     projectsSelected.map(project => {
 
-      const {name, link, github, description, thumbnail, technologies} = project;
+      const {name, description, thumbnail, technologies} = project;
+
+      const github = project.github ? `<a href="${project.github}" class="github secondary-cta" title="View project files" target="_blank">Git</a>` : ``;
+      const link = project.link ? `<a href="${project.link}" class="live primary-cta" title="View live" target="_blank">Live</a>` : ``;
 
       projectsItems += `
 
@@ -236,8 +239,8 @@ document.addEventListener('DOMContentLoaded', (e) => {
                 </div>
 
                 <div class="content__links">
-                  <a href="${github}" class="github secondary-cta" title="View project files" target="_blank">Git</a>
-                  <a href="${link}" class="live primary-cta" title="View live" target="_blank">Live</a>
+                  ${github}
+                  ${link}
                 </div>
 
               </div>
@@ -319,6 +322,15 @@ document.addEventListener('DOMContentLoaded', (e) => {
   }
 
   displayFilters();
+
+
+  // force open cv pdf in new window
+  document.querySelector('.cv').addEventListener('click', (e) => {
+
+    e.preventDefault();
+    window.open(e.target.getAttribute('href'));
+
+  });
 
 
 });
