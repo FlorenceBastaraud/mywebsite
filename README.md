@@ -1,2 +1,9 @@
-My porfolio website
-Made with plain JS, html and sass
+# My website
+
+### Made with plain JS
+
+#### Javascript
+#### SASS
+#### Html
+#### JSON
+#### API / FETCH / AJAX
