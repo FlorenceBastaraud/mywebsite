@@ -893,6 +893,9 @@
     justify-content: flex-start;
     align-items: center;
   }
+  .main__projects--wrapper .projects__flux--item .content__infos--description {
+    text-align: center;
+  }
 }
 .main__projects--wrapper .projects__flux--item .content__infos--description {
   font-style: italic;

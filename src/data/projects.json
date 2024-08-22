@@ -8,7 +8,7 @@
       "description": "",
       "thumbnail": "mywebsite.png",
       "technologies": {
-        "string": "Html/Css, Sass, Javascript",
+        "string": "Html, Sass, Javascript",
         "tags": [
           "html",
           "css",
@@ -24,7 +24,7 @@
       "description": "Réseau social basé sur des centres d'intérêts, avec systême d'authentification et des channels de discussions instantannée.",
       "thumbnail": "zobbies.png",
       "technologies": {
-        "string": "Html/Css, Sass, Javascript, Express, Socket.io",
+        "string": "Vanilla Javascript, Sass, Html, Express, Socket.io",
         "tags": [
           "html",
           "css",
