@@ -19,7 +19,7 @@
     },
     {
       "name": "Zobbies",
-      "link": "https://zobbies-spa.vercel.app/",
+      "link": "https://zobbies-client.onrender.com",
       "github": "https://github.com/FlorenceBastaraud/zobbies",
       "description": "Réseau social basé sur des centres d'intérêts, avec systême d'authentification et des channels de discussions instantannée.",
       "thumbnail": "zobbies.png",
