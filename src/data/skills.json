@@ -1,27 +1,20 @@
 {
   "front": [
-    "HTML/CSS",
+    "Html, Css",
+    "Sass, Tailwind",
     "Javascript, TypeScript",
-    "Sass, tailwind, Jquery",
-    "ReactJs, VueJs, NextJs",
-    "Vite",
-    "Testing, Vitest",
-    "API, Ajax"
+    "ReactJs, NextJs, VueJs",
+    "Testing"
   ],
   "back": [
     "NodeJs, ExpressJs, NextJs",
     "Php",
     "Sql, MySql",
-    "MongoDB",
-    "API"
+    "MongoDB"
   ],
   "more": [
     "Regex",
     "Git",
-    "Accessibility",
-    "SEO",
-    "UI/UX, Figma"
+    "Accessibility"
   ]
 }
-
-

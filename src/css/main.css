@@ -326,11 +326,15 @@
 }
 .main__hero--wrapper .image {
   width: 250px;
-  height: 250px;
+  height: 300px;
   border-radius: 52% 48% 70% 30%/51% 55% 45% 49%;
   background-color: #070707;
   overflow: hidden;
   transition: 0.3s ease-in-out;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   -webkit-animation: animateBlob 13s infinite;
   -moz-animation: animateBlob 13s infinite;
   -ms-animation: animateBlob 13s infinite;
@@ -341,7 +345,7 @@
   background-color: #fbc4ab;
 }
 .main__hero--wrapper .image img {
-  width: 100%;
+  width: 90%;
   height: 100%;
   object-fit: cover;
 }
@@ -445,7 +449,7 @@
   border-radius: 42% 20% 44% 20%/20% 20% 20% 36%;
 }
 .main__skills--wrapper .skills__item.active {
-  background: linear-gradient(340deg, #ff9a9a 0%, #fbc4ab 100%);
+  background: linear-gradient(340deg, rgba(255, 154, 154, 0.368627451) 0%, #fbc4ab 100%);
   color: #070707;
 }
 .main__skills--wrapper .skills__item--title {
