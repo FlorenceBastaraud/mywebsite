@@ -363,6 +363,7 @@
 }
 .main__hero--wrapper .content .description {
   font-weight: 500;
+  font-size: 1rem;
 }
 .main__hero--wrapper .content .cv span, .main__hero--wrapper .content .cv i {
   pointer-events: none;
@@ -975,6 +976,10 @@ a, button {
 ::selection {
   background: #14213D;
   color: #FFF;
+}
+
+h3 {
+  font-size: 1rem;
 }
 
 .main {

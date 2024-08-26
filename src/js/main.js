@@ -104,10 +104,10 @@ document.addEventListener('DOMContentLoaded', (e) => {
       experiencesItems += `
 
             <div class="experiences__item">
-              <h4 class="experiences__item--society">
+              <h3 class="experiences__item--society">
                 <i class="fas fa-network-wired icon"></i>
                 <span>${society}</span>
-              </h4>
+              </h3>
               <div class="experiences__item--date">${date}</div>
               <p class="experiences__item--description">${description}</p>
             </div>
@@ -141,10 +141,10 @@ document.addEventListener('DOMContentLoaded', (e) => {
       educationItems += `
 
             <div class="education__item">
-              <h4 class="education__item--title">
+              <h3 class="education__item--title">
                 <i class="fas fa-network-wired icon"></i>
                 <span>${title}</span>
-              </h4>
+              </h3>
               <div class="education__item--date">${date}</div>
               <p class="education__item--description">${description}</p>
               <span class="education__item--mention">${mention}</span>
@@ -233,7 +233,7 @@ document.addEventListener('DOMContentLoaded', (e) => {
               <div class="content">
 
                 <div class="content__infos">
-                  <h4 class="content__infos--name">${name}</h4>
+                  <h3 class="content__infos--name">${name}</h3>
                   <p class="content__infos--description">${description}</p>
                   <h5 class="content__infos--stack"><span class="label">Stack: </span>${technologies.string}</h5>
                 </div>
