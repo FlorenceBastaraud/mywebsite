@@ -37,6 +37,22 @@
       }
     },
     {
+      "name": "DiceFall",
+      "link": "https://florencebastaraud.github.io/dicefall/",
+      "github": "https://github.com/FlorenceBastaraud/dicefall",
+      "description": "Réalisation d'un jeu de lancer de dés virtuel. Le jeu se gagne lorsque l'ensemble des 10 dés affichent le même chiffre.",
+      "thumbnail": "dicefall.png",
+      "technologies": {
+        "string": "ReactJs, Javascript, Html, Css.",
+        "tags": [
+          "html",
+          "css",
+          "javascript",
+          "react"
+        ]
+      }
+    },
+    {
       "name": "LibraryBlooms",
       "link": "https://florencebastaraud.github.io/libraryblooms/",
       "github": "https://github.com/FlorenceBastaraud/libraryblooms",
@@ -82,22 +98,6 @@
           "css",
           "javascript",
           "php"
-        ]
-      }
-    },
-    {
-      "name": "Jeu de lancer de dés",
-      "link": "https://florencebastaraud.github.io/dice-game/",
-      "github": "https://github.com/FlorenceBastaraud/dice-game",
-      "description": "Réalisation d'un jeu de lancer de dés virtuel. Le jeu se gagne lorsque l'ensemble des 10 dés affichent le même chiffre.",
-      "thumbnail": "dice-game.png",
-      "technologies": {
-        "string": "ReactJs, Javascript, Html, Css.",
-        "tags": [
-          "html",
-          "css",
-          "javascript",
-          "react"
         ]
       }
     },
