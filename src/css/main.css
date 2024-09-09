@@ -347,6 +347,11 @@
 .main__hero {
   position: relative;
 }
+@media (max-width: 840px) {
+  .main__hero {
+    margin: 130px auto 50px;
+  }
+}
 .main__hero::before, .main__hero::after {
   transition: border-radius 2s ease;
 }
@@ -437,6 +442,17 @@
   transition: transform 0.5s ease, opacity 0.3s ease;
   position: relative;
   opacity: 1;
+}
+@media (max-width: 550px) {
+  .main__hero--wrapper .content .title__animated--letter {
+    font-size: 1.875rem;
+  }
+}
+@media (max-width: 840px) {
+  .main__hero--wrapper .content .title__animated .separate {
+    display: block;
+    height: 1px;
+  }
 }
 .main__hero--wrapper .content .description {
   font-weight: 500;

@@ -1,6 +1,9 @@
 .main__hero
   position: relative
 
+  @include media-query(840px)
+    margin: 130px auto 50px
+
   &::before, &::after
     transition: border-radius 2s ease
 
@@ -75,6 +78,14 @@
             transition: transform 0.5s ease, opacity 0.3s ease
             position: relative
             opacity: 1
+
+            @include media-query(550px)
+              font-size: toRem(30)
+
+          .separate
+            @include media-query(840px)
+              display: block
+              height: 1px
 
       .description
         font-weight: 500
