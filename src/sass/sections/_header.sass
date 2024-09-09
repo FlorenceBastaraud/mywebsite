@@ -40,7 +40,7 @@
           &::after
             width: 100%
 
-        &::after
+        &::after  
           content: ''
           position: absolute
           left: 0
@@ -53,3 +53,9 @@
           @include media-query(840px)
             bottom: 0
             height: 1px
+
+        i
+          font-size: toRem(15)
+
+          @include media-query(840px)
+            font-size: toRem(13)

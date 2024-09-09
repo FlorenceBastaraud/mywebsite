@@ -11,3 +11,24 @@
     background: $secondBackgroundColor
     background: linear-gradient(340deg, #dedcd9 0%, $secondBackgroundColor 100%)
     border-radius: 30% 70% 8% 92% / 49% 19% 81% 51%
+
+
+@include keyframes(fadeInTop)
+  0%
+    opacity: 0
+    top: -100vh
+    scale: 2.5
+
+  100% 
+    opacity: 1
+    top: 0
+    scale: 1
+
+@include keyframes(fadeInBottom)
+  0%
+    opacity: 0
+    bottom: -100vh
+
+  100% 
+    opacity: 1
+    bottom: 0

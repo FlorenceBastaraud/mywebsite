@@ -2,19 +2,14 @@
   "total": 6,
   "data": [
     {
-      "name": "My website",
+      "name": "This.",
       "link": "https://florence-b.com/",
       "github": "https://github.com/FlorenceBastaraud/mywebsite",
-      "description": "",
+      "description": "My personal website",
       "thumbnail": "mywebsite.png",
       "technologies": {
         "string": "Html, Sass, Javascript",
-        "tags": [
-          "html",
-          "css",
-          "sass",
-          "javascript"
-        ]
+        "tags": ["html", "css", "sass", "javascript"]
       }
     },
     {
@@ -44,79 +39,30 @@
       "thumbnail": "dicefall.png",
       "technologies": {
         "string": "ReactJs, Javascript, Html, Css.",
-        "tags": [
-          "html",
-          "css",
-          "javascript",
-          "react"
-        ]
+        "tags": ["html", "css", "javascript", "react"]
       }
     },
     {
       "name": "LibraryBlooms",
       "link": "https://florencebastaraud.github.io/libraryblooms/",
       "github": "https://github.com/FlorenceBastaraud/libraryblooms",
-      "description": "Application de livres",
+      "description": "Application web de livre qui propose une sélection aléatoire d'ouvrage (avec choix de genres ou pas), avec possibilité de s'envoyer la sélection de livre ou de l'envoyer à des amis.",
       "thumbnail": "libraryblooms.png",
-      "technologies": { 
-        "string": "Html/Css, Javascript, ReactJs.",
-        "tags": [
-          "html",
-          "css",
-          "javascript",
-          "react"
-        ]
-      }
-    },
-    {
-      "name": "Eden Prim +",
-      "link": null,
-      "github": null,
-      "description": "L'entreprise Eden Prim + m'a embauchée pour la conception et la réalisation de leur site web. Le mot d'ordre était rustique.",
-      "thumbnail": "edenprim.png",
       "technologies": {
-        "string": "Prestashop, Html, Css, Javascript, PHP.",
-        "tags": [
-          "prestashop",
-          "html",
-          "css",
-          "javascript",
-          "php"
-        ]
+        "string": "Html/Sass, TypeScript, ReactJs, Gsap.",
+        "tags": ["html", "sass", "typescript", "react", "gsap"]
       }
     },
     {
-      "name": "BeloTennis Club",
-      "link": null,
-      "github": null,
-      "description": "J'ai réalisée la partie front du site du club de Tennis, BeloTennis. Quant au back, j'ai été chargé de m'occuper de la réalisation d'un formulaire avec envoi de messages par e-mail.",
-      "thumbnail": "belotennis.png",
-      "technologies": {
-        "string": "Javascript, Html, Css, Php.",
-        "tags": [
-          "html",
-          "css",
-          "javascript",
-          "php"
-        ]
-      }
-    },
-    {
-      "name": "CONVERSES",
+      "name": "ChuckMania",
       "link": "https://florencebastaraud.github.io/converses-landing-page/",
       "github": "https://github.com/FlorenceBastaraud/converses-landing-page",
       "description": "Landing page d'un site de converse sneakers.",
       "thumbnail": "converses-landing-page.png",
       "technologies": {
         "string": "Javascript, Html, Css.",
-        "tags": [
-          "html",
-          "css",
-          "javascript"
-        ]
+        "tags": ["html", "css", "javascript"]
       }
     }
   ]
 }
-
-

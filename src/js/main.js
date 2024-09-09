@@ -333,4 +333,71 @@ document.addEventListener('DOMContentLoaded', (e) => {
   });
 
 
+  // hero section title animation
+  const letters = document.querySelectorAll('.letter');
+  let isAnimating = false;
+
+  function getRandomPosition(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+  }
+
+  function applyRandomPositions() {
+    if (!isAnimating) {
+      isAnimating = true;
+
+      letters.forEach(letter => {
+        const randomX = getRandomPosition(-200, 200);
+        const randomY = getRandomPosition(-200, 200);
+        const randomRotate = getRandomPosition(-30, 30);
+        
+        letter.style.transform = `translate(${randomX}px, ${randomY}px) rotate(${randomRotate}deg)`;
+      });
+    }
+  }
+
+  function resetPositions() {
+    if (isAnimating){
+      letters.forEach(letter => {
+        letter.style.transform = `translate(0, 0) rotate(0deg)`;
+      });
+      isAnimating = false;
+    }
+  }
+
+  document.querySelector('.title__animated').addEventListener('mouseover', applyRandomPositions);
+  document.querySelector('.title__animated').addEventListener('mouseout', resetPositions);
+
+
+
+  // hero backgrounds
+  function getRandomBorderRadius() {
+    const percentage1 = Math.random() * 100;
+    const percentage2 = Math.random() * 100;
+    const percentage3 = Math.random() * 100;
+    const percentage4 = Math.random() * 100;
+    return `${percentage1}% ${percentage2}% ${percentage3}% ${percentage4}% / ${percentage1}% ${percentage2}% ${percentage3}% ${percentage4}%`;
+  }
+  
+  function updateBorderRadius() {
+    const radiusBefore = getRandomBorderRadius();
+    const radiusAfter = getRandomBorderRadius();
+  
+    const style = document.createElement('style');
+    style.textContent = `
+      .main__hero::before {
+        border-radius: ${radiusBefore};
+      }
+      .main__hero::after {
+        border-radius: ${radiusAfter};
+      }
+    `;
+    
+    document.head.appendChild(style);
+  }
+  
+  setInterval(updateBorderRadius, 3000);
+  
+ 
+  
+
 });

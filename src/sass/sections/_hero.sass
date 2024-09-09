@@ -1,5 +1,33 @@
 .main__hero
+  position: relative
 
+  &::before, &::after
+    transition: border-radius 2s ease
+
+  &::before
+    content: ''
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    height: 70vh
+    width: 90vw
+    background-color: #000000d9
+    z-index: -22
+    border-radius: 57% 65% 35% 43%
+
+  &::after
+    content: ''
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    height: 70vh
+    width: 90vw
+    z-index: -20
+    border-radius: 86% 14% 100% 0% / 57% 65% 35% 43%
+    background: radial-gradient(circle at top, #dedede, #e7ffd7)
+    
   &--wrapper
     width: 100%
     height: 100%
@@ -28,16 +56,34 @@
     .content
       @include displayFlex(column, center, center)
       gap: 14px
+
+      .title
+        @include displayFlex(row, center, center)
+        flex-wrap: wrap
+        position: relative
+        opacity: 0
+        animation: fadeInTop 1.5s ease forwards
         
-      .main-title
-        font-size: 63px
-        text-align: center
-        font-style: italic
+        &__animated
+          font-size: toRem(50)
+          letter-spacing: 0
+          text-align: center
+          font-style: italic
+
+          &--letter
+            display: inline-block
+            transition: transform 0.5s ease, opacity 0.3s ease
+            position: relative
+            opacity: 1
 
       .description
         font-weight: 500
         font-size: toRem(16)
+        animation: fadeInTop 2s ease forwards
 
       .cv
+        position: relative
+        animation: fadeInBottom 1.5s ease forwards
+
         span, i
           pointer-events: none
