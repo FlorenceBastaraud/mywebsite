@@ -1,9 +1,9 @@
 {
   "total": 6,
-  "years": 3,
+  "years": 4,
   "data": [
     {
-      "date": "Février 2023 - Avril 2024 (1 an et 2 mois)",
+      "date": "Février 2023 - Avril 2024 (1 an et 3 mois)",
       "society": "Epresspack",
       "description": "Développeuse web front pour divers clients de l'entreprise. Build. Debuggage. Daily meetings. • Technos utilisées: Javascript, Php, Html/Css, Sass, Vue.js, Jquery."
     },
@@ -34,5 +34,3 @@
     }
   ]
 }
-
-
