@@ -1,10 +1,14 @@
 .footer
   width: 100%
-  padding: toEm(10) 0
+  padding: toEm(90) 0 toEm(10)
   transition: .3s ease-in-out
+  position: fixed
+  bottom: 0
+  left: 0
+  width: 100%
 
   @include media-query(840px)
-    padding: toEm(20) 0
+    padding: toEm(50) 0 toEm(20)
 
   &__content
     @include displayFlex(column, flex-start, flex-start)

@@ -83,7 +83,7 @@
 .preload-ball {
   width: 20px;
   height: 20px;
-  background-color: #fcf6f6;
+  background-color: #00e13d;
   border-radius: 50%;
   position: absolute;
   top: -50px;
@@ -196,12 +196,16 @@
 
 .footer {
   width: 100%;
-  padding: 0.625em 0;
+  padding: 5.625em 0 0.625em;
   transition: 0.3s ease-in-out;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
 }
 @media (max-width: 840px) {
   .footer {
-    padding: 1.25em 0;
+    padding: 3.125em 0 1.25em;
   }
 }
 .footer__content {
@@ -310,7 +314,15 @@
   color: #a0e9b0;
 }
 
+.main__hero {
+  min-height: calc(100vh - 80px - 91px);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
 .main__hero--wrapper {
+  position: relative;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -361,7 +373,53 @@
   color: #a0e9b0;
   scale: 1.025;
 }
-.main__hero--wrapper .image {
+.main__hero--wrapper .illust {
+  position: relative;
+}
+.main__hero--wrapper .illust__speech-bubble {
+  position: absolute;
+  top: -1.25rem;
+  right: -0.625rem;
+  background-color: #fcf6f6;
+  color: #171717;
+  padding: 0.375em 0.875em;
+  border-radius: 14px;
+  transition: scale 0.3 ease-in-out;
+  opacity: 0;
+  scale: 0;
+}
+@media (max-width: 765px) {
+  .main__hero--wrapper .illust__speech-bubble {
+    top: -1.875rem;
+    right: -1.25rem;
+  }
+}
+.main__hero--wrapper .illust__speech-bubble:hover {
+  background-color: #00e13d;
+  color: #fff;
+}
+.main__hero--wrapper .illust__speech-bubble:hover::after {
+  border-top-color: #00e13d;
+}
+.main__hero--wrapper .illust__speech-bubble--text {
+  color: inherit;
+  font-family: "Comic Sans", cursive, sans-serif;
+}
+.main__hero--wrapper .illust__speech-bubble::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  z-index: -1;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-top: 12px solid #fcf6f6;
+  border-top-color: #fcf6f6;
+}
+.main__hero--wrapper .illust__image {
   width: 225px;
   height: 225px;
   background-color: #fcf6f6;
@@ -369,12 +427,12 @@
   border-radius: 50%;
   overflow: hidden;
 }
-.main__hero--wrapper .image img {
+.main__hero--wrapper .illust__image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.main__hero--wrapper .video {
+.main__hero--wrapper .illust__video {
   width: 225px;
   height: 225px;
   background-color: #fcf6f6;
@@ -383,21 +441,113 @@
   position: relative;
   clip-path: circle(50%);
 }
-.main__hero--wrapper .video video {
+.main__hero--wrapper .illust__video video {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 @media (max-width: 765px) {
-  .main__hero--wrapper .image, .main__hero--wrapper .video {
+  .main__hero--wrapper .illust__image, .main__hero--wrapper .illust__video {
     width: 150px;
     height: 150px;
   }
 }
-.main__hero--wrapper .image img, .main__hero--wrapper .image video, .main__hero--wrapper .video img, .main__hero--wrapper .video video {
+.main__hero--wrapper .illust__image img, .main__hero--wrapper .illust__image video, .main__hero--wrapper .illust__video img, .main__hero--wrapper .illust__video video {
   transition: transform 0.3s ease-in;
 }
-.main__hero--wrapper .image img:hover, .main__hero--wrapper .image video:hover, .main__hero--wrapper .video img:hover, .main__hero--wrapper .video video:hover {
+.main__hero--wrapper .illust__image img:hover, .main__hero--wrapper .illust__image video:hover, .main__hero--wrapper .illust__video img:hover, .main__hero--wrapper .illust__video video:hover {
+  transform: rotate(180deg);
+  scale: 2;
+}
+
+.main__about--wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 3.125rem;
+}
+@media (max-width: 765px) {
+  .main__about--wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.main__about--wrapper .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+@media (max-width: 765px) {
+  .main__about--wrapper .content {
+    align-items: center;
+  }
+}
+.main__about--wrapper .content__fname, .main__about--wrapper .content__lname {
+  font-size: 3.4375rem;
+  line-height: 3.4375rem;
+}
+.main__about--wrapper .content__fname {
+  color: #00e13d;
+}
+.main__about--wrapper .content__lname {
+  text-transform: uppercase;
+}
+.main__about--wrapper .content__work-title {
+  margin-top: 0.625rem;
+  font-size: 1.25rem;
+  font-weight: 400;
+  position: relative;
+  opacity: 0;
+  left: -100%;
+}
+.main__about--wrapper .content__work-title, .main__about--wrapper .content__lname {
+  transition: 0.4s ease-in-out;
+}
+.main__about--wrapper .content__work-title:hover, .main__about--wrapper .content__lname:hover {
+  color: #a0e9b0;
+  scale: 1.025;
+}
+.main__about--wrapper .image {
+  width: 225px;
+  height: 225px;
+  background-color: #fcf6f6;
+  border: 3px solid #00e13d;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.main__about--wrapper .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.main__about--wrapper .video {
+  width: 225px;
+  height: 225px;
+  background-color: #fcf6f6;
+  color: #171717;
+  overflow: hidden;
+  position: relative;
+  clip-path: circle(50%);
+}
+.main__about--wrapper .video video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+@media (max-width: 765px) {
+  .main__about--wrapper .image, .main__about--wrapper .video {
+    width: 150px;
+    height: 150px;
+  }
+}
+.main__about--wrapper .image img, .main__about--wrapper .image video, .main__about--wrapper .video img, .main__about--wrapper .video video {
+  transition: transform 0.3s ease-in;
+}
+.main__about--wrapper .image img:hover, .main__about--wrapper .image video:hover, .main__about--wrapper .video img:hover, .main__about--wrapper .video video:hover {
   transform: rotate(180deg);
   scale: 2;
 }
@@ -1027,6 +1177,10 @@ h3 {
 }
 .main section {
   width: 100%;
+}
+.main .section {
+  opacity: 0;
+  transform: translateY(50px);
 }
 
 ::-webkit-scrollbar {

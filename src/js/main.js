@@ -10,6 +10,7 @@ window.addEventListener('load', () => {
   const logo = '.header__content--logo'
   const heroIllust = '#hero-illust'
   const particles = '#particles-js'
+  const speechBubble = '.illust__speech-bubble'
 
   tl.to(ball, {
     y: '80vh',
@@ -63,7 +64,7 @@ window.addEventListener('load', () => {
     {
       left: 0,
       opacity: 1,
-      duration: 3,
+      duration: 2,
       ease: 'power1.out',
     },
     'preload'
@@ -99,6 +100,13 @@ window.addEventListener('load', () => {
     'hero2'
   )
 
+  tl.to(speechBubble, {
+    opacity: 1,
+    scale: 1,
+    duration: 1,
+    ease: 'elastic.out(1, 0.75)',
+  })
+
   tl.to(copyr, {
     opacity: 1,
     duration: 0.5,
@@ -110,10 +118,59 @@ window.addEventListener('load', () => {
     duration: 0.5,
     ease: 'sine.out',
   })
+
+  gsap.registerPlugin(ScrollTrigger)
+  gsap.utils.toArray('.section').forEach((section) => {
+    gsap.fromTo(
+      section,
+      {
+        opacity: 0,
+        y: 50,
+        scale: 0.9,
+      },
+      {
+        opacity: 1,
+        y: 0,
+        scale: 1,
+        duration: 1,
+        ease: 'power2.out',
+        scrollTrigger: {
+          trigger: section,
+          start: 'top 75%',
+          end: 'bottom 20%',
+          scrub: 1,
+          markers: false,
+          onEnter: () => {
+            gsap.set(section, { clearProps: 'all' })
+          },
+          onLeaveBack: () => {
+            gsap.to(section, { opacity: 0, y: 50, scale: 0.9, duration: 0.5 })
+          },
+        },
+      }
+    )
+  })
+})
+
+// remove footer fixed position on scroll
+document.addEventListener('DOMContentLoaded', () => {
+  const footer = document.querySelector('footer')
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 100) {
+      footer.style.position = 'relative'
+    } else {
+      footer.style.position = 'fixed'
+    }
+  })
 })
 
 // particles
 window.addEventListener('DOMContentLoaded', () => {
+  const particleColor = '#FFF'
+  const particleShapeStokeColor = '#000'
+  const particleLineLinkedColor = '#FFF'
+
   particlesJS('particles-js', {
     particles: {
       number: {
@@ -124,13 +181,13 @@ window.addEventListener('DOMContentLoaded', () => {
         },
       },
       color: {
-        value: '#ffffff',
+        value: particleColor,
       },
       shape: {
         type: 'circle',
         stroke: {
           width: 0,
-          color: '#000000',
+          color: particleShapeStokeColor,
         },
       },
       opacity: {
@@ -144,7 +201,7 @@ window.addEventListener('DOMContentLoaded', () => {
       line_linked: {
         enable: true,
         distance: 150,
-        color: '#ffffff',
+        color: particleLineLinkedColor,
         opacity: 0.4,
         width: 1,
       },
