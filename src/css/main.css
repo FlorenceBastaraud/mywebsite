@@ -196,7 +196,7 @@
 
 .footer {
   width: 100%;
-  padding: 5.625em 0 0.625em;
+  padding: 6.25em 0 0.625em;
   transition: 0.3s ease-in-out;
   position: fixed;
   bottom: 0;
@@ -321,6 +321,11 @@
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 840px) {
+  .main__hero {
+    align-items: flex-start;
+  }
+}
 .main__hero--wrapper {
   position: relative;
   display: flex;
@@ -329,7 +334,7 @@
   align-items: center;
   gap: 3.125rem;
 }
-@media (max-width: 765px) {
+@media (max-width: 840px) {
   .main__hero--wrapper {
     display: flex;
     flex-direction: column-reverse;
@@ -343,7 +348,7 @@
   justify-content: center;
   align-items: flex-start;
 }
-@media (max-width: 765px) {
+@media (max-width: 840px) {
   .main__hero--wrapper .content {
     align-items: center;
   }
@@ -351,6 +356,12 @@
 .main__hero--wrapper .content__fname, .main__hero--wrapper .content__lname {
   font-size: 3.4375rem;
   line-height: 3.4375rem;
+}
+@media (max-width: 440px) {
+  .main__hero--wrapper .content__fname, .main__hero--wrapper .content__lname {
+    font-size: 2.8125rem;
+    line-height: 2.8125rem;
+  }
 }
 .main__hero--wrapper .content__fname {
   color: #00e13d;
@@ -388,7 +399,7 @@
   opacity: 0;
   scale: 0;
 }
-@media (max-width: 765px) {
+@media (max-width: 840px) {
   .main__hero--wrapper .illust__speech-bubble {
     top: -1.875rem;
     right: -1.25rem;
@@ -446,7 +457,7 @@
   height: 100%;
   object-fit: cover;
 }
-@media (max-width: 765px) {
+@media (max-width: 840px) {
   .main__hero--wrapper .illust__image, .main__hero--wrapper .illust__video {
     width: 150px;
     height: 150px;
@@ -465,91 +476,29 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 3.125rem;
-}
-@media (max-width: 765px) {
-  .main__about--wrapper {
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: center;
-    align-items: center;
-  }
 }
 .main__about--wrapper .content {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  gap: 1.25rem;
+  max-width: 500px;
 }
 @media (max-width: 765px) {
   .main__about--wrapper .content {
     align-items: center;
   }
 }
-.main__about--wrapper .content__fname, .main__about--wrapper .content__lname {
-  font-size: 3.4375rem;
-  line-height: 3.4375rem;
-}
-.main__about--wrapper .content__fname {
-  color: #00e13d;
-}
-.main__about--wrapper .content__lname {
-  text-transform: uppercase;
-}
-.main__about--wrapper .content__work-title {
-  margin-top: 0.625rem;
-  font-size: 1.25rem;
-  font-weight: 400;
-  position: relative;
-  opacity: 0;
-  left: -100%;
-}
-.main__about--wrapper .content__work-title, .main__about--wrapper .content__lname {
+.main__about--wrapper .content__title {
   transition: 0.4s ease-in-out;
 }
-.main__about--wrapper .content__work-title:hover, .main__about--wrapper .content__lname:hover {
+.main__about--wrapper .content__title:hover {
   color: #a0e9b0;
   scale: 1.025;
 }
-.main__about--wrapper .image {
-  width: 225px;
-  height: 225px;
-  background-color: #fcf6f6;
-  border: 3px solid #00e13d;
-  border-radius: 50%;
-  overflow: hidden;
-}
-.main__about--wrapper .image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.main__about--wrapper .video {
-  width: 225px;
-  height: 225px;
-  background-color: #fcf6f6;
-  color: #171717;
-  overflow: hidden;
-  position: relative;
-  clip-path: circle(50%);
-}
-.main__about--wrapper .video video {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-@media (max-width: 765px) {
-  .main__about--wrapper .image, .main__about--wrapper .video {
-    width: 150px;
-    height: 150px;
-  }
-}
-.main__about--wrapper .image img, .main__about--wrapper .image video, .main__about--wrapper .video img, .main__about--wrapper .video video {
-  transition: transform 0.3s ease-in;
-}
-.main__about--wrapper .image img:hover, .main__about--wrapper .image video:hover, .main__about--wrapper .video img:hover, .main__about--wrapper .video video:hover {
-  transform: rotate(180deg);
-  scale: 2;
+.main__about--wrapper .content__text {
+  color: #fcf6f6;
 }
 
 .main__skills {
@@ -1181,6 +1130,7 @@ h3 {
 .main .section {
   opacity: 0;
   transform: translateY(50px);
+  margin-bottom: 100px;
 }
 
 ::-webkit-scrollbar {

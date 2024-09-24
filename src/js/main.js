@@ -35,6 +35,9 @@ window.addEventListener('load', () => {
       backgroundColor: '#070707',
       duration: 1.5,
       ease: 'power1.inOut',
+      onComplete: () => {
+        document.querySelector(ball).style.display = 'none'
+      },
     },
     'preload'
   )
@@ -45,6 +48,9 @@ window.addEventListener('load', () => {
       x: '-110vw',
       duration: 3,
       ease: 'power1.inOut',
+      onComplete: () => {
+        document.querySelector(playground).style.display = 'none'
+      },
     },
     'preload'
   )
@@ -156,13 +162,20 @@ window.addEventListener('load', () => {
 document.addEventListener('DOMContentLoaded', () => {
   const footer = document.querySelector('footer')
 
-  window.addEventListener('scroll', () => {
+  function handleFooterPosition() {
     if (window.scrollY > 100) {
       footer.style.position = 'relative'
     } else {
-      footer.style.position = 'fixed'
+      if (window.innerWidth > 760) {
+        footer.style.position = 'fixed'
+      } else {
+        footer.style.position = 'relative'
+      }
     }
-  })
+  }
+
+  window.addEventListener('scroll', handleFooterPosition)
+  window.addEventListener('resize', handleFooterPosition)
 })
 
 // particles
