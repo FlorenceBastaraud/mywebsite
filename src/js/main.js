@@ -142,8 +142,8 @@ window.addEventListener('load', () => {
         ease: 'power2.out',
         scrollTrigger: {
           trigger: section,
-          start: 'top 75%',
-          end: 'bottom 20%',
+          start: 'top 95%',
+          end: 'bottom 2%',
           scrub: 1,
           markers: false,
           onEnter: () => {
