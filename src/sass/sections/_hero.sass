@@ -1,100 +1,82 @@
 .main__hero
-  position: relative
 
-  @include media-query(840px)
-    margin: 130px auto 50px
-
-  &::before, &::after
-    transition: border-radius 2s ease
-
-  &::before
-    content: ''
-    position: absolute
-    top: 50%
-    left: 50%
-    transform: translate(-50%, -50%)
-    height: 70vh
-    width: 90vw
-    background-color: #000000d9
-    z-index: -22
-    border-radius: 57% 65% 35% 43%
-
-  &::after
-    content: ''
-    position: absolute
-    top: 50%
-    left: 50%
-    transform: translate(-50%, -50%)
-    height: 70vh
-    width: 90vw
-    z-index: -20
-    border-radius: 86% 14% 100% 0% / 57% 65% 35% 43%
-    background: radial-gradient(circle at top, #dedede, #e7ffd7)
-    
   &--wrapper
-    width: 100%
-    height: 100%
-    padding: toEm(30) toEm(40)
-    @include displayFlex(column, center, center)
-    gap: 25px
+    @include displayFlex(row, center, center)
+    gap: toRem(50)
+  
+    @include media-query(765px)
+      @include displayFlex(column-reverse, center, center)
+
+
+    .content
+      @include displayFlex(column, center, flex-start)
+
+      @include media-query(765px)
+        align-items: center
+
+      &__fname, &__lname
+        font-size: toRem(55)
+        line-height: toRem(55)
+
+      &__fname
+        color: $accent
+
+      &__lname
+        text-transform: uppercase
+
+      &__work-title
+        margin-top: toRem(10)
+        font-size: toRem(20)
+        font-weight: 400
+        position: relative
+        opacity: 0
+        left: -100%
+
+      &__work-title, &__lname
+        transition: .4s ease-in-out
+
+        &:hover
+          color: $highlighted
+          scale: 1.025
 
     .image
-      width: 250px
-      height: 300px
-      border-radius: 52% 48% 70% 30% / 51% 55% 45% 49%
-      background-color: $primaryColor
+      width: 225px
+      height: 225px
+      background-color: $componentBackground
+      border: 3px solid $accent
+      border-radius: 50%
+      // border-radius: 50% 50% 160% 50% / 160% 50% 50% 50%
       overflow: hidden
-      transition: .3s ease-in-out
-      @include displayFlex(row, center, center)
-      @include animation('animateBlob 13s infinite')
 
-      &:hover
-        background-color: $labelColor
-      
       img
-        width: 90%
+        width: 100%
         height: 100%
         object-fit: cover
 
-    .content
-      @include displayFlex(column, center, center)
-      gap: 14px
+    .video
+      width: 225px
+      height: 225px
+      background-color: $componentBackground
+      color: $componentColor
+      overflow: hidden
+      position: relative
+      clip-path: circle(50%)
 
-      .title
-        @include displayFlex(row, center, center)
-        flex-wrap: wrap
-        position: relative
-        opacity: 0
-        animation: fadeInTop 1.5s ease forwards
+      video
+        width: 100%
+        height: 100%
+        object-fit: cover
+
+
+    .image, .video
+      @include media-query(765px)
+        width: 150px
+        height: 150px
+
+      img, video
+        transition: transform .3s ease-in
         
-        &__animated
-          font-size: toRem(50)
-          letter-spacing: 0
-          text-align: center
-          font-style: italic
-
-          &--letter
-            display: inline-block
-            transition: transform 0.5s ease, opacity 0.3s ease
-            position: relative
-            opacity: 1
-
-            @include media-query(550px)
-              font-size: toRem(30)
-
-          .separate
-            @include media-query(840px)
-              display: block
-              height: 1px
-
-      .description
-        font-weight: 500
-        font-size: toRem(16)
-        animation: fadeInTop 2s ease forwards
-
-      .cv
-        position: relative
-        animation: fadeInBottom 1.5s ease forwards
-
-        span, i
-          pointer-events: none
+        &:hover
+          transform: rotate(180deg)
+          scale: 2
+      

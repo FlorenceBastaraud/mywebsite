@@ -18,9 +18,9 @@
 
     .experiences, .education
       width: 100%
-      border-left: 1px dashed $secondBackgroundColor
-      background-color: $mainBackground
-      color: $primaryColor
+      border-left: 1px dashed $background
+      background-color: $background
+      color: $color
       padding: toEm(20) toEm(30)
       display: grid
       grid-template-columns: repeat(2, 1fr)
@@ -66,7 +66,7 @@
         transition: .3s ease
 
         &:hover
-          background-color: $buttonBackgroundColor
+          background-color: $background
           border-radius: 10px
 
           @include media-query(840px)
@@ -76,13 +76,13 @@
             
         @include media-query(840px)
           padding: toEm(10) toEm(20)
-          border: 1px solid $secondBackgroundColor
+          border: 1px solid $background
           border-radius: 20px
 
         &--society, &--title
           @include displayFlex(row, flex-start, center)
           gap: 7px
-          color: $secondBackgroundColor
+          color: $background
 
           @media (min-width: 841px) and (max-width: 967px)
             font-size: toRem(13)
@@ -113,7 +113,7 @@
         @include media-query(840px)
           width: unset
           padding: toEm(10) toEm(20)
-          border: 1px solid $secondBackgroundColor
+          border: 1px solid $background
           border-radius: 20px
 
         &--date
@@ -128,7 +128,7 @@
 
     .career-tabs
       z-index: 10
-      background-color: $mainBackground
+      background-color: $background
       position: absolute
       top: 25px
       left: -15px
@@ -158,18 +158,18 @@
           padding: toEm(7) toEm(15)
           
         &:hover
-          background-color: $buttonBackgroundColor
+          background-color: $background
         
         &.active
           z-index: 30
-          background-color: $primaryColor
+          background-color: $color
           scale: 1.1
 
           i
-            color: $mainBackground
+            color: $background
         
         i
-          color: $primaryColor
+          color: $color
           transition: .3s ease-in-out
           pointer-events: none
         

@@ -1,204 +1,197 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bastaraud Florence - Front End Developer</title>
-  <link rel="icon" type="image/x-icon" href="/favicon.ico">
-  <link rel="stylesheet" href="./src/css/main.css">
-  <script src="https://kit.fontawesome.com/058064b705.js" crossorigin="anonymous"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Moderustic:wght@300..800&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
-</head>
-<body>
-  
-  
-  <header class="header">
-    <div class="header__content wrapper">
-      
-      <div class="header__content--logo">
-        <a href="/" class="logo" aria-label="Logo who has a clickable link to the homepage"><span>FB</span></a>
-      </div>
-      
-      <nav class="header__content--nav">
-        <a href="/#hero" class="menu-link" aria-label="Link to the homepage"><i class="fa-solid fa-house-flag" aria-label="Home icon in black"></i></a>
-        <a href="/#skills" class="menu-link">SKills</a>
-        <a href="/#career" class="menu-link">Career</a>
-        <a href="/#projects" class="menu-link">Projects</a>
-      </nav>
-      
-    </div>
-  </header> 
-  
-  
-  <main class="main">
-    
-    
-    <section class="main__hero" id="hero">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bastaraud Florence - Front End Developer</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="stylesheet" href="./src/css/main.css" />
+    <script
+      src="https://kit.fontawesome.com/058064b705.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gotu&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-      <div class="main__hero--wrapper wrapper">
+  <body>
+    <div class="preload-playground"></div>
+    <div class="preload-ball"></div>
 
+    <div id="particles-js"></div>
 
-        <div class="content">
-          <div class="title">
-            <h1 class="title__animated">
-              <span class="title__animated--letter letter">F</span>
-              <span class="title__animated--letter letter">l</span>
-              <span class="title__animated--letter letter">o</span>
-              <span class="title__animated--letter letter">r</span>
-              <span class="title__animated--letter letter">e</span>
-              <span class="title__animated--letter letter">n</span>
-              <span class="title__animated--letter letter">c</span>
-              <span class="title__animated--letter letter">e</span>
-              <span class="separate">&nbsp</span>
-              <span class="title__animated--letter letter">B</span>
-              <span class="title__animated--letter letter">a</span>
-              <span class="title__animated--letter letter">s</span>
-              <span class="title__animated--letter letter">t</span>
-              <span class="title__animated--letter letter">a</span>
-              <span class="title__animated--letter letter">r</span>
-              <span class="title__animated--letter letter">a</span>
-              <span class="title__animated--letter letter">u</span>
-              <span class="title__animated--letter letter">d</span>
-            </h1>
-          </div>
-          <h2 class="description">Front End Developer living in Paris</h2>
-          <span class="line-through">(obsessed with Javascript)</span>
-          <a href="./src/images/CVFlorenceBastaraud2024.pdf" class="cv primary-cta" aria-label="view my curriculum vitae in pdf format">
-            <span>My curriculum vitae</span>
-            <i class="fa-regular fa-file-pdf"></i>
-          </a>
+    <header class="header">
+      <div class="header__content wrapper">
+        <div class="header__content--logo">
+          <a
+            href="/"
+            class="logo"
+            aria-label="Logo who has a clickable link to the homepage"
+            ><span>FB</span></a
+          >
         </div>
 
-      </div>
-
-    </section>
-
-    
-    <section class="main__skills" id="skills">
-      
-      <div class="main__skills--wrapper">
-
-        <h2 class="title">SKills</h2>
-
-        <div class="skills wrapper">
-
-          <div class="skills__item skills__front active">
-            <h3 class="skills__item--title">Front</h3>
-
-            <ul class="skills__item--list" id="skills__front--list"></ul>
-
-          </div>
-
-          <div class="skills__item skills__back">
-            <h3 class="skills__item--title">Back</h3>
-
-            <ul class="skills__item--list" id="skills__back--list"></ul>
-
-          </div>
-
-          <div class="skills__item skills__more">
-            <h3 class="skills__item--title">More</h3>
-
-            <ul class="skills__item--list" id="skills__more--list"></ul>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <section class="main__career" id="career">
-        
-      <div class="main__career--wrapper wrapper">
-
-        <h2 class="title">Career</h2>
-
-        <div class="career-tabs">
-          <div class="career-tabs__item active" data-career="experiences">
-            <i class="fa-solid fa-briefcase"></i>
-          </div>
-          <div class="career-tabs__item" data-career="education">
-            <i class="fa-solid fa-school"></i>
-          </div>
-        </div>
-
-        <div class="experiences" id="experiences-list">
-          <span class="experiences__title">Experiences</span>
-
-        </div> 
-        
-        <div class="education display-none" id="education-list">
-          <span class="education__title">Education</span>
-
-        </div>
-       
-      </div>
-
-    </section>
-
-    <section class="main__projects" id="projects">
-      <div class="main__projects--wrapper">
-
-        <h2 class="title">Projects</h2>
-        <div class="projects wrapper">
-          
-          <div class="projects__filters">
-
-            <ul class="projects__filters--list"></ul>
-
-          </div>
-
-          <div class="projects__flux">
-            
-          </div>
-
-          </div>
-
-        </div>
-
-      </div>
-    </section>
-
-  </main>
-
-
-  <footer class="footer">
-
-    <div class="footer__content wrapper">
-
-      <div class="footer__content--links">
-
-        <div class="menu">
+        <nav class="header__content--nav">
+          <a href="/#hero" class="menu-link" aria-label="Link to the homepage"
+            ><i
+              class="fa-solid fa-house-flag"
+              aria-label="Home icon in black"
+            ></i
+          ></a>
           <a href="/#skills" class="menu-link">SKills</a>
           <a href="/#career" class="menu-link">Career</a>
           <a href="/#projects" class="menu-link">Projects</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="main__hero" id="hero">
+        <div class="main__hero--wrapper wrapper">
+          <div class="content">
+            <h2 class="content__fname title">Florence</h2>
+            <h2 class="content__lname title">Bastaraud</h2>
+            <h1 class="content__work-title">Développeuse Front End</h1>
+          </div>
+          <div class="image" id="hero-illust">
+            <img
+              src="./src/images/meee.png"
+              alt="Picture of Florence Bastaraud"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- 
+      <section class="main__skills" id="skills">
+        
+        <div class="main__skills--wrapper">
+
+          <h2 class="title">SKills</h2>
+
+          <div class="skills wrapper">
+
+            <div class="skills__item skills__front active">
+              <h3 class="skills__item--title">Front</h3>
+
+              <ul class="skills__item--list" id="skills__front--list"></ul>
+
+            </div>
+
+            <div class="skills__item skills__back">
+              <h3 class="skills__item--title">Back</h3>
+
+              <ul class="skills__item--list" id="skills__back--list"></ul>
+
+            </div>
+
+            <div class="skills__item skills__more">
+              <h3 class="skills__item--title">More</h3>
+
+              <ul class="skills__item--list" id="skills__more--list"></ul>
+
+            </div>
+
+          </div>
+
         </div>
 
-        <div class="find-me">
-          <a href="https://github.com/florenceBastaraud" target="_blank" title="Find me on Github"><i class="fa-brands fa-github"></i></a>
-          <a href="https://www.linkedin.com/in/florence-bastaraud-2630b3204/" target="_blank" title="Find me on Linkedin"><i class="fa-brands fa-linkedin"></i></a>
-          <a href="mailto:fbastaraud@yahoo.fr" title="Email me"><i class="fa-solid fa-envelope"></i></a>
+      </section>
+
+      <section class="main__career" id="career">
+          
+        <div class="main__career--wrapper wrapper">
+
+          <h2 class="title">Career</h2>
+
+          <div class="career-tabs">
+            <div class="career-tabs__item active" data-career="experiences">
+              <i class="fa-solid fa-briefcase"></i>
+            </div>
+            <div class="career-tabs__item" data-career="education">
+              <i class="fa-solid fa-school"></i>
+            </div>
+          </div>
+
+          <div class="experiences" id="experiences-list">
+            <span class="experiences__title">Experiences</span>
+
+          </div> 
+          
+          <div class="education display-none" id="education-list">
+            <span class="education__title">Education</span>
+
+          </div>
+        
         </div>
 
+      </section>
+
+      <section class="main__projects" id="projects">
+        <div class="main__projects--wrapper">
+
+          <h2 class="title">Projects</h2>
+          <div class="projects wrapper">
+            
+            <div class="projects__filters">
+
+              <ul class="projects__filters--list"></ul>
+
+            </div>
+
+            <div class="projects__flux">
+              
+            </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </section> -->
+    </main>
+
+    <footer class="footer">
+      <div class="footer__content wrapper">
+        <div class="footer__content--links">
+          <div class="menu">
+            <a href="/#skills" class="menu-link">Skills</a>
+            <a href="/#career" class="menu-link">Career</a>
+            <a href="/#projects" class="menu-link">Projects</a>
+          </div>
+
+          <div class="find-me">
+            <a
+              href="https://github.com/florenceBastaraud"
+              target="_blank"
+              title="Find me on Github"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/florence-bastaraud-2630b3204/"
+              target="_blank"
+              title="Find me on Linkedin"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+            <a href="mailto:fbastaraud@yahoo.fr" title="Email me"
+              ><i class="fa-solid fa-envelope"></i
+            ></a>
+          </div>
+        </div>
+
+        <div class="footer__content--copyrights">
+          <span>© 2024</span>
+          <a href="/">Florence Bastaraud</a>
+        </div>
       </div>
+    </footer>
 
-      <div class="footer__content--copyrights">
-        <span>© 2024</span>
-        <a href="/">Florence Bastaraud</a> 
-      </div>
-
-    </div>
-
-  </footer>
-
-  <script src="./src/js/main.js"></script>
-</body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="./src/js/main.js"></script>
+  </body>
 </html>
