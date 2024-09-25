@@ -6,10 +6,14 @@
   &--wrapper
     @include displayFlex(column, center, center)
     width: 100%
-    gap: toRem(80)
+    gap: toRem(50)
 
     @include media-query(840px)
       gap: toRem(30)
+
+
+    .title
+      text-align: center
 
     .skills
       width: 100%

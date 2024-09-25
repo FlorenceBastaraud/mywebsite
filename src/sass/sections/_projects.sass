@@ -1,12 +1,10 @@
 .main__projects
-  background-color: $color
-  color: $background
-  @include displayFlex(row, center, center)
+  @include displayFlex(row, center, flex-start)
   width: 100%
   height: 100%
 
   &--wrapper
-    @include displayFlex(column, center, center)
+    @include displayFlex(column, flex-start, center)
     width: 100%
     height: 100%
 
@@ -20,21 +18,17 @@
     .projects
       width: 100%
       height: 100%
-      @include displayFlex(row, space-between, flex-start)
+      @include displayFlex(column, center, center)
+      padding: 0 toEm(30)
       gap: 30px
-      padding: toEm(50) toEm(10)
-
-      @include media-query(840px)
-        @include displayFlex(column, center, center)
-        padding: 0 toEm(30)
-        gap: 10px
+        
 
       &__filters
         height: 100%
         
         &--list
           list-style-type: none
-          @include displayFlex(column, flex-start, center)
+          @include displayFlex(row, center, center)
           gap: toRem(15)
           padding: toEm(20) toEm(15)
           border-radius: 10px
@@ -46,7 +40,7 @@
             border-right: none
                   
           .filter
-            font-size: toRem(18)
+            font-size: toRem(15)
             font-weight: 400
             position: relative
             text-transform: lowercase
@@ -96,8 +90,8 @@
           gap: toRem(25)
 
         &--item
-          background-color: $background
-          color: $color
+          background-color: $componentBackground
+          color: $componentColor
           display: grid
           grid-template-columns: auto 1fr
           gap: 10px
@@ -147,6 +141,7 @@
 
               &--description
                 font-style: italic
+                font-size: toRem(16)
 
               &--stack
                 font-weight: 400

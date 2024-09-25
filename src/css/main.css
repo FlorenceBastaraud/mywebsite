@@ -555,12 +555,15 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  gap: 5rem;
+  gap: 3.125rem;
 }
 @media (max-width: 840px) {
   .main__skills--wrapper {
     gap: 1.875rem;
   }
+}
+.main__skills--wrapper .title {
+  text-align: center;
 }
 .main__skills--wrapper .skills {
   width: 100%;
@@ -651,19 +654,17 @@
 }
 
 .main__projects {
-  background-color: #fcf6f6;
-  color: #171717;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   width: 100%;
   height: 100%;
 }
 .main__projects--wrapper {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   width: 100%;
   height: 100%;
@@ -683,21 +684,11 @@
   width: 100%;
   height: 100%;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1.875em;
   gap: 30px;
-  padding: 3.125em 0.625em;
-}
-@media (max-width: 840px) {
-  .main__projects--wrapper .projects {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0 1.875em;
-    gap: 10px;
-  }
 }
 .main__projects--wrapper .projects__filters {
   height: 100%;
@@ -705,8 +696,8 @@
 .main__projects--wrapper .projects__filters--list {
   list-style-type: none;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+  flex-direction: row;
+  justify-content: center;
   align-items: center;
   gap: 0.9375rem;
   padding: 1.25em 0.9375em;
@@ -724,7 +715,7 @@
   }
 }
 .main__projects--wrapper .projects__filters--list .filter {
-  font-size: 1.125rem;
+  font-size: 0.9375rem;
   font-weight: 400;
   position: relative;
   text-transform: lowercase;
@@ -782,8 +773,8 @@
   }
 }
 .main__projects--wrapper .projects__flux--item {
-  background-color: #171717;
-  color: #fcf6f6;
+  background-color: #fcf6f6;
+  color: #171717;
   display: grid;
   grid-template-columns: auto 1fr;
   gap: 10px;
@@ -856,6 +847,7 @@
 }
 .main__projects--wrapper .projects__flux--item .content__infos--description {
   font-style: italic;
+  font-size: 1rem;
 }
 .main__projects--wrapper .projects__flux--item .content__infos--stack {
   font-weight: 400;
