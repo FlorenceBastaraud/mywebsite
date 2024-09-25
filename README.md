@@ -1,8 +1,8 @@
 # My personal website
 
 Made with:
-Html/css/Sass
-Javascript
-Gsap
-ScrollTrigger
+Html/css/Sass,
+Javascript,
+Gsap,
+ScrollTrigger,
 ParticlesJs
