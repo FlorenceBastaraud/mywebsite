@@ -152,6 +152,23 @@
   color: #171717;
 }
 
+.back-to-top {
+  position: fixed;
+  bottom: 1.25rem;
+  right: 1.25rem;
+  background-color: #fcf6f6;
+  color: #171717;
+  border: none;
+  border-radius: 50%;
+  padding: 0.5em 0.9375em;
+  cursor: pointer;
+  display: none;
+  z-index: 1000;
+}
+.back-to-top:hover {
+  background-color: #00e13d;
+}
+
 .header {
   width: 100%;
   padding: 1.25em 0;

@@ -20,7 +20,9 @@
     "nav-lang-switcher-label": "Choose website language",
     "socials-github-label": "Find me on GitHub",
     "socials-linkedin-label": "Find me on LinkedIn",
-    "socials-email-label": "Email me"
+    "socials-email-label": "Email me",
+    "arrow-back-top-label": "Click to go back to the top of the page",
+    "arrow-top-icon-label": "Arrow top icon"
   },
   "fr": {
     "site-title": "Bastaraud Florence - Développeuse Front End",
@@ -43,6 +45,8 @@
     "nav-lang-switcher-label": "Choisissez la langue du site",
     "socials-github-label": "Me trouver sur GitHub",
     "socials-linkedin-label": "Me trouver sur LinkedIn",
-    "socials-email-label": "Me contacter pour email"
+    "socials-email-label": "Me contacter pour email",
+    "arrow-back-top-label": "Cliquez pour revenir en haut de la page",
+    "arrow-top-icon-label": "Icône de flèche en haut"
   }
 }
