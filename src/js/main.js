@@ -127,15 +127,33 @@ window.addEventListener('load', () => {
 
   gsap.registerPlugin(ScrollTrigger)
   gsap.utils.toArray('.section').forEach((section) => {
+    // Opacity animation without scrub
     gsap.fromTo(
       section,
       {
         opacity: 0,
+      },
+      {
+        opacity: 1,
+        duration: 1,
+        ease: 'power2.out',
+        scrollTrigger: {
+          trigger: section,
+          start: 'top 80%', // Start animation when section is near the viewport
+          end: 'bottom 20%',
+          toggleActions: 'play none none reverse', // Simplify toggle for opacity
+        },
+      }
+    )
+
+    // Position and scale animation with scrub
+    gsap.fromTo(
+      section,
+      {
         y: 50,
         scale: 0.9,
       },
       {
-        opacity: 1,
         y: 0,
         scale: 1,
         duration: 1,
@@ -146,9 +164,6 @@ window.addEventListener('load', () => {
           end: 'bottom 2%',
           scrub: 1,
           markers: false,
-          onEnter: () => {
-            gsap.set(section, { clearProps: 'all' })
-          },
           onLeaveBack: () => {
             gsap.to(section, { opacity: 0, y: 50, scale: 0.9, duration: 0.5 })
           },
@@ -258,10 +273,11 @@ window.addEventListener('DOMContentLoaded', () => {
 // data displays
 document.addEventListener('DOMContentLoaded', () => {
   // skills
-  const displayskills = async () => {
+  const displayskills = async (lang) => {
     const url = location.origin
     const response = await fetch(`${url}/src/data/skills.json`)
-    const skills = await response.json()
+    let skills = await response.json()
+    skills = skills[lang]
 
     const frontSkillsListWrapper = document.getElementById(
       'skills__front--list'
@@ -272,7 +288,7 @@ document.addEventListener('DOMContentLoaded', () => {
       frontSkillsItems += `<li class="skill">${skill}</li>`
     })
 
-    frontSkillsListWrapper.innerHTML += frontSkillsItems
+    frontSkillsListWrapper.innerHTML = frontSkillsItems
 
     const backSkillsListWrapper = document.getElementById('skills__back--list')
     let backSkillsItems = ``
@@ -281,7 +297,7 @@ document.addEventListener('DOMContentLoaded', () => {
       backSkillsItems += `<li class="skill">${skill}</li>`
     })
 
-    backSkillsListWrapper.innerHTML += backSkillsItems
+    backSkillsListWrapper.innerHTML = backSkillsItems
 
     const moreSkillsListWrapper = document.getElementById('skills__more--list')
     let moreSkillsItems = ``
@@ -290,18 +306,17 @@ document.addEventListener('DOMContentLoaded', () => {
       moreSkillsItems += `<li class="skill">${skill}</li>`
     })
 
-    moreSkillsListWrapper.innerHTML += moreSkillsItems
+    moreSkillsListWrapper.innerHTML = moreSkillsItems
   }
 
-  displayskills()
-
   // projects
-  const displayProjects = async (tech = 'all') => {
+  const displayProjects = async (lang, tech = 'all') => {
     const url = location.origin
     const response = await fetch(`${url}/src/data/projects.json`)
     const projects = await response.json()
     const projectsSelected = []
-    projects.data.map((project) => {
+
+    projects.data[lang].map((project) => {
       if (tech !== 'all') {
         if (project.technologies.tags.includes(tech)) {
           projectsSelected.push(project)
@@ -355,10 +370,8 @@ document.addEventListener('DOMContentLoaded', () => {
     projectsListWrapper.innerHTML = projectsItems
   }
 
-  displayProjects()
-
   // projects filters
-  const displayFilters = async () => {
+  const displayFilters = async (lang) => {
     const url = location.origin
     const response = await fetch(`${url}/src/data/projects.json`)
     const projects = await response.json()
@@ -370,7 +383,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const filtersValues = []
 
-    projects.data.map((project) => {
+    projects.data[lang].map((project) => {
       project.technologies.tags.map((technology) => {
         filtersValues.push(technology)
       })
@@ -378,7 +391,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const filters = Array.from(new Set(filtersValues)).sort()
 
-    projectsFiltersItems += `<li class="filter active" data-filter="all">all</li>`
+    const allText = lang == 'en' ? 'all' : 'tout'
+    projectsFiltersItems += `<li class="filter active" data-filter="all">${allText}</li>`
 
     filters.map((filter) => {
       if (filter !== 'prestashop') {
@@ -403,16 +417,51 @@ document.addEventListener('DOMContentLoaded', () => {
           otherFilter.classList.remove('active')
         })
 
-        return displayProjects(currFilter)
+        return displayProjects(lang, currFilter)
       })
     })
   }
-
-  displayFilters()
 
   // force open cv pdf in new window
   document.querySelector('.cv').addEventListener('click', (e) => {
     e.preventDefault()
     window.open(e.target.getAttribute('href'))
   })
+
+  // lang switcher
+  const languageSwitcher = document.getElementById('lang-switcher')
+
+  async function translatePage(language) {
+    const url = location.origin
+    const response = await fetch(`${url}/src/data/static-translations.json`)
+    const staticTranslations = await response.json()
+
+    const elements = document.querySelectorAll('[data-translate]')
+
+    elements.forEach((element) => {
+      const key = element.getAttribute('data-translate')
+      const label = element.getAttribute('data-label')
+      const title = element.getAttribute('title')
+      const translation = staticTranslations[language][key]
+
+      if (label) {
+        element.setAttribute('aria-label', translation)
+      } else if (title) {
+        element.setAttribute('title', translation)
+      } else {
+        element.textContent = translation
+      }
+    })
+
+    displayskills(language)
+    displayProjects(language)
+    displayFilters(language)
+  }
+
+  languageSwitcher.addEventListener('change', (event) => {
+    const selectedLanguage = event.target.value
+    translatePage(selectedLanguage)
+  })
+
+  translatePage('en')
 })

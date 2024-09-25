@@ -24,7 +24,7 @@
         @include displayFlex(column, center, flex-end)
         row-gap: toEm(5)
 
-      a
+      a, select
         font-size: toRem(18)
         font-weight: 400
         font-style: italic
@@ -61,3 +61,15 @@
 
           @include media-query(840px)
             font-size: toRem(13)
+
+      select
+        background: none
+        outline: none
+        border: none
+        color: $color
+        cursor: pointer
+
+        option
+          background: $background
+          color: $color
+          cursor: pointer

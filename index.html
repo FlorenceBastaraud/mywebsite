@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bastaraud Florence - Front End Developer</title>
+    <title data-translate="site-title">Florence Bastaraud - Front End Developer</title>
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
     <link rel="stylesheet" href="./src/css/main.css" />
     <script
@@ -31,24 +31,40 @@
             href="/"
             class="logo"
             aria-label="Logo who has a clickable link to the homepage"
+            data-translate="logo-label"
+            data-label="true"
             ><span>FB</span></a
           >
         </div>
 
         <nav class="header__content--nav">
-          <a href="/#hero" class="menu-link" aria-label="Link to the homepage"
+          <a
+          href="/#hero"
+          class="menu-link"
+          aria-label="Link to the homepage"
+          data-translate="nav-home-label"
+          data-label="true"
             ><i
               class="fa-solid fa-house-flag"
-              aria-label="Home icon in black"
+              aria-label="Home icon"
+              data-translate="nav-home-icon-label"
+              data-label="true"
             ></i
           ></a>
-          <a href="/#about" class="menu-link">About</a>
-          <a href="/#skills" class="menu-link">Skills</a>
-          <a href="/#career" class="menu-link">Career</a>
-          <a href="/#projects" class="menu-link">Projects</a>
-          <a href="/#socials" class="menu-link"
-            ><i class="fa-solid fa-link" alt="Let's link!"></i
-          ></a>
+          <a href="/#about" class="menu-link" data-translate="about"></a>
+          <a href="/#skills" class="menu-link" data-translate="skills"></a>
+          <a href="/#career" class="menu-link" data-translate="career"></a>
+          <a href="/#projects" class="menu-link" data-translate="projects"></a>
+          <select
+            aria-label="Choose website language"
+            class="lang-switch"
+            id="lang-switcher"
+            data-translate="nav-lang-switcher-label"
+            data-label="true"
+          >
+          <option value="en">EN</option>
+          <option value="fr">FR</option>
+          </select>
         </nav>
       </div>
     </header>
@@ -59,7 +75,7 @@
           <div class="content">
             <h2 class="content__fname title">Florence</h2>
             <h2 class="content__lname title">Bastaraud</h2>
-            <h1 class="content__work-title">Développeuse Front End</h1>
+            <h1 class="content__work-title" data-translate="hero-work-title"></h1>
           </div>
           <div class="illust">
             <div class="illust__image" id="hero-illust">
@@ -69,7 +85,7 @@
               />
             </div>
             <div class="illust__speech-bubble">
-              <p class="illust__speech-bubble--text">Hi !</p>
+              <p class="illust__speech-bubble--text" data-translate="hero-speech"></p>
             </div>
           </div>
         </div>
@@ -78,20 +94,15 @@
       <section class="main__about section" id="about">
         <div class="main__about--wrapper wrapper">
           <div class="content">
-            <h2 class="content__title title">Who am i, you ask?</h2>
-            <p class="content__text">
-              I'm a 28 developer who's specilies in front end. Some would say
-              I'm obsessed with Javascript, but don't believe them. Eternal
-              learner. I like to marry the practicable to the beautiful. Meet me
-              where the simple and complicate differ.
-            </p>
+            <h2 class="content__title title" data-translate="about-title"></h2>
+            <p class="content__text" data-translate="about-text"></p>
           </div>
         </div>
       </section>
 
       <section class="main__skills section" id="skills">
         <div class="main__skills--wrapper wrapper">
-          <h2 class="title">My main technical stack in projects</h2>
+          <h2 class="title" data-translate="skills-title"></h2>
 
           <div class="skills">
             <div class="skills__item skills__front active">
@@ -107,7 +118,7 @@
             </div>
 
             <div class="skills__item skills__more">
-              <h3 class="skills__item--title">More</h3>
+              <h3 class="skills__item--title" data-translate="skills-more"></h3>
 
               <ul class="skills__item--list" id="skills__more--list"></ul>
             </div>
@@ -118,16 +129,13 @@
       <section class="main__career section" id="career">
         <div class="main__career--wrapper wrapper">
           <div class="content">
-            <h2 class="content__title title">
-              Want to know more about my career?
-            </h2>
+            <h2 class="content__title title" data-translate="career-title"></h2>
             <a
               class="cv primary-cta"
               href="./src/images/CVFlorenceBastaraud2024.pdf"
-              aria-label="view my curriculum vitae in pdf format"
               class="content__cta"
+              data-translate="career-cta"
             >
-              Get my CV
             </a>
           </div>
         </div>
@@ -136,7 +144,7 @@
       <section class="main__projects section" id="projects">
         <div class="main__projects--wrapper wrapper">
 
-          <h2 class="title">Side projects</h2>
+          <h2 class="title" data-translate="projects-title"></h2>
           <div class="projects">
             
             <div class="projects__filters">
@@ -163,10 +171,10 @@
       <div class="footer__content wrapper">
         <div class="footer__content--links">
           <div class="menu">
-            <a href="/#about" class="menu-link">About</a>
-            <a href="/#skills" class="menu-link">Skills</a>
-            <a href="/#career" class="menu-link">Career</a>
-            <a href="/#projects" class="menu-link">Projects</a>
+            <a href="/#about" class="menu-link" data-translate="about"></a>
+            <a href="/#skills" class="menu-link" data-translate="skills"></a>
+            <a href="/#career" class="menu-link" data-translate="career"></a>
+            <a href="/#projects" class="menu-link" data-translate="projects"></a>
           </div>
 
           <div class="find-me" id="socials">
@@ -174,15 +182,23 @@
               href="https://github.com/florenceBastaraud"
               target="_blank"
               title="Find me on Github"
+              data-translate="socials-github-label"
+              data-title="true"
               ><i class="fa-brands fa-github"></i
             ></a>
             <a
               href="https://www.linkedin.com/in/florence-bastaraud-2630b3204/"
               target="_blank"
               title="Find me on Linkedin"
+              data-translate="socials-linkedin-label"
+              data-title="true"
               ><i class="fa-brands fa-linkedin"></i
             ></a>
-            <a href="mailto:fbastaraud@yahoo.fr" title="Email me"
+            <a
+            href="mailto:fbastaraud@yahoo.fr"
+            title="Email me"
+            data-translate="socials-email-label"
+            data-title="true"
               ><i class="fa-solid fa-envelope"></i
             ></a>
           </div>

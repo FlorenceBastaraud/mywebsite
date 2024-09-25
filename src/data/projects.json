@@ -1,68 +1,135 @@
 {
-  "total": 6,
-  "data": [
-    {
-      "name": "This.",
-      "link": "https://florence-b.com/",
-      "github": "https://github.com/FlorenceBastaraud/mywebsite",
-      "description": "My personal website",
-      "thumbnail": "mywebsite.png",
-      "technologies": {
-        "string": "Html, Sass, Javascript",
-        "tags": ["html", "css", "sass", "javascript"]
+  "total": 5,
+  "data": {
+    "en": [
+      {
+        "name": "This.",
+        "link": "https://florence-b.com/",
+        "github": "https://github.com/FlorenceBastaraud/mywebsite",
+        "description": "My personal website",
+        "thumbnail": "mywebsite.png",
+        "technologies": {
+          "string": "Html, Sass, Javascript",
+          "tags": ["html", "css", "sass", "javascript"]
+        }
+      },
+      {
+        "name": "Zobbies",
+        "link": "https://zobbies-client.onrender.com",
+        "github": "https://github.com/FlorenceBastaraud/zobbies",
+        "description": "Hobbies-based social network with authentication system and instant chat channels.",
+        "thumbnail": "zobbies.png",
+        "technologies": {
+          "string": "Vanilla Javascript, Sass, Html, Express, Socket.io",
+          "tags": [
+            "html",
+            "css",
+            "sass",
+            "javascript",
+            "express",
+            "node",
+            "socket-io"
+          ]
+        }
+      },
+      {
+        "name": "DiceFall",
+        "link": "https://florencebastaraud.github.io/dicefall/",
+        "github": "https://github.com/FlorenceBastaraud/dicefall",
+        "description": "Virtual dice roll. The game is won when all 10 dices show the same number.",
+        "thumbnail": "dicefall.png",
+        "technologies": {
+          "string": "ReactJs, Javascript, Html, Css.",
+          "tags": ["html", "css", "javascript", "react"]
+        }
+      },
+      {
+        "name": "LibraryBlooms",
+        "link": "https://florencebastaraud.github.io/libraryblooms/",
+        "github": "https://github.com/FlorenceBastaraud/libraryblooms",
+        "description": "Book web application that offers a random selection of books (with choice of genres or not), with the possibility to send the selection of books to our email box or to send it to friends.",
+        "thumbnail": "libraryblooms.png",
+        "technologies": {
+          "string": "Html/Sass, TypeScript, ReactJs, Gsap.",
+          "tags": ["html", "sass", "typescript", "react", "gsap"]
+        }
+      },
+      {
+        "name": "ChuckMania",
+        "link": "https://florencebastaraud.github.io/converses-landing-page/",
+        "github": "https://github.com/FlorenceBastaraud/converses-landing-page",
+        "description": "Sneakers website Landing page.",
+        "thumbnail": "converses-landing-page.png",
+        "technologies": {
+          "string": "Javascript, Html, Css.",
+          "tags": ["html", "css", "javascript"]
+        }
       }
-    },
-    {
-      "name": "Zobbies",
-      "link": "https://zobbies-client.onrender.com",
-      "github": "https://github.com/FlorenceBastaraud/zobbies",
-      "description": "Réseau social basé sur des centres d'intérêts, avec systême d'authentification et des channels de discussions instantannée.",
-      "thumbnail": "zobbies.png",
-      "technologies": {
-        "string": "Vanilla Javascript, Sass, Html, Express, Socket.io",
-        "tags": [
-          "html",
-          "css",
-          "sass",
-          "javascript",
-          "express",
-          "node",
-          "socket-io"
-        ]
+    ],
+    "fr": [
+      {
+        "name": "Ce site.",
+        "link": "https://florence-b.com/",
+        "github": "https://github.com/FlorenceBastaraud/mywebsite",
+        "description": "Mon site personnel",
+        "thumbnail": "mywebsite.png",
+        "technologies": {
+          "string": "Html, Sass, Javascript",
+          "tags": ["html", "css", "sass", "javascript"]
+        }
+      },
+      {
+        "name": "Zobbies",
+        "link": "https://zobbies-client.onrender.com",
+        "github": "https://github.com/FlorenceBastaraud/zobbies",
+        "description": "Réseau social basé sur des centres d'intérêts, avec systême d'authentification et des channels de discussions instantannée.",
+        "thumbnail": "zobbies.png",
+        "technologies": {
+          "string": "Vanilla Javascript, Sass, Html, Express, Socket.io",
+          "tags": [
+            "html",
+            "css",
+            "sass",
+            "javascript",
+            "express",
+            "node",
+            "socket-io"
+          ]
+        }
+      },
+      {
+        "name": "DiceFall",
+        "link": "https://florencebastaraud.github.io/dicefall/",
+        "github": "https://github.com/FlorenceBastaraud/dicefall",
+        "description": "Réalisation d'un jeu de lancer de dés virtuel. Le jeu se gagne lorsque l'ensemble des 10 dés affichent le même chiffre.",
+        "thumbnail": "dicefall.png",
+        "technologies": {
+          "string": "ReactJs, Javascript, Html, Css.",
+          "tags": ["html", "css", "javascript", "react"]
+        }
+      },
+      {
+        "name": "LibraryBlooms",
+        "link": "https://florencebastaraud.github.io/libraryblooms/",
+        "github": "https://github.com/FlorenceBastaraud/libraryblooms",
+        "description": "Application web de livre qui propose une sélection aléatoire d'ouvrage (avec choix de genres ou pas), avec possibilité de s'envoyer la sélection de livre ou de l'envoyer à des amis.",
+        "thumbnail": "libraryblooms.png",
+        "technologies": {
+          "string": "Html/Sass, TypeScript, ReactJs, Gsap.",
+          "tags": ["html", "sass", "typescript", "react", "gsap"]
+        }
+      },
+      {
+        "name": "ChuckMania",
+        "link": "https://florencebastaraud.github.io/converses-landing-page/",
+        "github": "https://github.com/FlorenceBastaraud/converses-landing-page",
+        "description": "Landing page d'un site de converse sneakers.",
+        "thumbnail": "converses-landing-page.png",
+        "technologies": {
+          "string": "Javascript, Html, Css.",
+          "tags": ["html", "css", "javascript"]
+        }
       }
-    },
-    {
-      "name": "DiceFall",
-      "link": "https://florencebastaraud.github.io/dicefall/",
-      "github": "https://github.com/FlorenceBastaraud/dicefall",
-      "description": "Réalisation d'un jeu de lancer de dés virtuel. Le jeu se gagne lorsque l'ensemble des 10 dés affichent le même chiffre.",
-      "thumbnail": "dicefall.png",
-      "technologies": {
-        "string": "ReactJs, Javascript, Html, Css.",
-        "tags": ["html", "css", "javascript", "react"]
-      }
-    },
-    {
-      "name": "LibraryBlooms",
-      "link": "https://florencebastaraud.github.io/libraryblooms/",
-      "github": "https://github.com/FlorenceBastaraud/libraryblooms",
-      "description": "Application web de livre qui propose une sélection aléatoire d'ouvrage (avec choix de genres ou pas), avec possibilité de s'envoyer la sélection de livre ou de l'envoyer à des amis.",
-      "thumbnail": "libraryblooms.png",
-      "technologies": {
-        "string": "Html/Sass, TypeScript, ReactJs, Gsap.",
-        "tags": ["html", "sass", "typescript", "react", "gsap"]
-      }
-    },
-    {
-      "name": "ChuckMania",
-      "link": "https://florencebastaraud.github.io/converses-landing-page/",
-      "github": "https://github.com/FlorenceBastaraud/converses-landing-page",
-      "description": "Landing page d'un site de converse sneakers.",
-      "thumbnail": "converses-landing-page.png",
-      "technologies": {
-        "string": "Javascript, Html, Css.",
-        "tags": ["html", "css", "javascript"]
-      }
-    }
-  ]
+    ]
+  }
 }

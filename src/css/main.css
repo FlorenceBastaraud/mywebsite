@@ -196,7 +196,7 @@
     row-gap: 0.3125em;
   }
 }
-.header__content--nav a {
+.header__content--nav a, .header__content--nav select {
   font-size: 1.125rem;
   font-weight: 400;
   font-style: italic;
@@ -206,17 +206,17 @@
   font-family: "Gotu", sans-serif;
 }
 @media (max-width: 840px) {
-  .header__content--nav a {
+  .header__content--nav a, .header__content--nav select {
     font-size: 1rem;
   }
 }
-.header__content--nav a:hover {
+.header__content--nav a:hover, .header__content--nav select:hover {
   color: #a0e9b0;
 }
-.header__content--nav a:hover::after {
+.header__content--nav a:hover::after, .header__content--nav select:hover::after {
   width: 100%;
 }
-.header__content--nav a::after {
+.header__content--nav a::after, .header__content--nav select::after {
   content: "";
   position: absolute;
   left: 0;
@@ -227,18 +227,30 @@
   transition: all 0.3s ease-in-out;
 }
 @media (max-width: 840px) {
-  .header__content--nav a::after {
+  .header__content--nav a::after, .header__content--nav select::after {
     bottom: 0;
     height: 1px;
   }
 }
-.header__content--nav a i {
+.header__content--nav a i, .header__content--nav select i {
   font-size: 0.9375rem;
 }
 @media (max-width: 840px) {
-  .header__content--nav a i {
+  .header__content--nav a i, .header__content--nav select i {
     font-size: 0.8125rem;
   }
+}
+.header__content--nav select {
+  background: none;
+  outline: none;
+  border: none;
+  color: #fcf6f6;
+  cursor: pointer;
+}
+.header__content--nav select option {
+  background: #171717;
+  color: #fcf6f6;
+  cursor: pointer;
 }
 
 .footer {
