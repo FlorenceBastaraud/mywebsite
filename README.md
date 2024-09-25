@@ -1,9 +1,8 @@
-# My website
+# My personal website
 
-### Made with plain JS
-
-#### Javascript
-#### SASS
-#### Html
-#### JSON
-#### API / FETCH / AJAX
+Made with:
+Html/css/Sass
+Javascript
+Gsap
+ScrollTrigger
+ParticlesJs
