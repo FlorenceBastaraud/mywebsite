@@ -327,7 +327,7 @@ document.addEventListener('DOMContentLoaded', () => {
     experiencesListWrapper.innerHTML += experiencesItems
   }
 
-  displayExperiences()
+  // displayExperiences()
 
   // education
   const displayEducation = async () => {
@@ -360,7 +360,7 @@ document.addEventListener('DOMContentLoaded', () => {
     educationListWrapper.innerHTML += educationItems
   }
 
-  displayEducation()
+  // displayEducation()
 
   // career tabs
   document.querySelectorAll('.career-tabs__item').forEach((tabItem) => {
