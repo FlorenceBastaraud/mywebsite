@@ -1,0 +1,16 @@
+.main__about
+
+  &--wrapper
+    @include displayFlex(row, center, center)
+
+    .content
+      @include displayFlex(column, center, flex-start)
+      gap: toRem(20)
+      max-width: 500px
+
+      @include media-query(765px)
+        align-items: center
+
+      &__text
+        color: $color
+      

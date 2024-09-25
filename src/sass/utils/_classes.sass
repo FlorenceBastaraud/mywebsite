@@ -8,7 +8,7 @@
 
 
 .logo
-  color: $primaryColor
+  color: $color
   font-size: toRem(24)
   font-weight: bold
   font-style: italic
@@ -17,31 +17,18 @@
   transition: all .3s ease-in-out
 
   &:hover
-    color: $primaryHoverColor
+    color: $highlighted
     scale: 1.1
     
 
 .display-none
-  display: none!important
-
-
-.main-title
-  margin: 0
-  font-family: $titleFont
-
-.title
-  letter-spacing: 15px
-  font-style: italic
   display: none
 
-  @include media-query(840px)
-    display: block
 
+.title
+  font-family: $titleFont
+  transition: .4s ease-in-out
 
-.line-through
-  text-decoration: line-through
-  font-size: toRem(12)
-  font-style: italic
-  line-height: 3px
-  // font-weight: 300
-  // display: none
+  &:hover
+    color: $highlighted
+    scale: 1.025

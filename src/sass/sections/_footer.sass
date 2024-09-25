@@ -1,23 +1,14 @@
 .footer
+  width: 100%
+  padding: toEm(100) 0 toEm(10)
+  transition: .3s ease-in-out
   position: fixed
   bottom: 0
+  left: 0
   width: 100%
-  padding: toEm(10) 0
-  transition: .3s ease-in-out
 
   @include media-query(840px)
-    margin-top: auto
-    position: unset
-    bottom: unset
-    padding: toEm(20) 0
-
-  &.vertical-scroll
-    margin-top: auto
-    position: unset
-    bottom: unset
-    padding: toEm(20) 0
-    background-color: $primaryColor
-    color: $mainBackground
+    padding: toEm(50) 0 toEm(20)
 
   &__content
     @include displayFlex(column, flex-start, flex-start)
@@ -26,6 +17,7 @@
     &--links
       width: 100%
       @include displayFlex(row, space-between, flex-end)
+      opacity: 0
 
       @include media-query(840px)
         @include displayFlex(column, flex-start, flex-start)
@@ -49,7 +41,7 @@
             font-size: toRem(14)
 
           &:hover
-            color: $primaryHoverColor
+            color: $highlighted
 
             &::after
               width: 100%
@@ -61,7 +53,7 @@
             bottom: -1px
             height: 1px
             width: 0
-            background-color: $primaryHoverColor
+            background-color: $highlighted
             transition: all .3s ease-in-out
 
 
@@ -74,12 +66,13 @@
           transition: color .3s ease-in-out
 
           &:hover
-            color: $primaryHoverColor
+            color: $highlighted
 
 
     &--copyrights
       width: 100%
       text-align: center
+      opacity: 0
       
       @include media-query(840px)
         font-size: toRem(12)
@@ -97,4 +90,4 @@
           font-size: toRem(12)
 
         &:hover
-          color: $primaryHoverColor
+          color: $highlighted

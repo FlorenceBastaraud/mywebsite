@@ -13,8 +13,10 @@
 
     &--logo
       @include displayFlex(row, center, center)
+      opacity: 0
 
     &--nav
+      opacity: 0
       @include displayFlex(row, center, center)
       column-gap: toEm(30)
 
@@ -29,13 +31,13 @@
         position: relative
         text-transform: lowercase
         transition: color .3s ease-in-out
-        font-family: $primaryFont
+        font-family: $font
 
         @include media-query(840px)
           font-size: toRem(16)
 
         &:hover
-          color: $primaryHoverColor
+          color: $highlighted
 
           &::after
             width: 100%
@@ -47,7 +49,7 @@
           bottom: -6px
           height: 1px
           width: 0
-          background-color: $primaryHoverColor
+          background-color: $highlighted
           transition: all .3s ease-in-out
 
           @include media-query(840px)

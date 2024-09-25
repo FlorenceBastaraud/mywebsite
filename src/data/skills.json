@@ -3,18 +3,8 @@
     "Html, Css",
     "Sass, Tailwind",
     "Javascript, TypeScript",
-    "ReactJs, NextJs, VueJs",
-    "Testing"
+    "ReactJs, NextJs, VueJs"
   ],
-  "back": [
-    "NodeJs, ExpressJs, NextJs",
-    "Php",
-    "Sql, MySql",
-    "MongoDB"
-  ],
-  "more": [
-    "Regex",
-    "Git",
-    "Accessibility"
-  ]
+  "back": ["NodeJs, ExpressJs, NextJs", "Php", "Sql, MySql", "MongoDB"],
+  "more": ["Git", "Testing", "Accessibility", "Regex"]
 }
