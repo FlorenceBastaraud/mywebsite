@@ -1,6 +1,6 @@
 # My personal website
 
-- Made with:
+Made with:
 - Html/css/Sass,
 - Javascript,
 - Gsap,
