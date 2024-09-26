@@ -5,4 +5,6 @@ Html/css/Sass,
 Javascript,
 Gsap,
 ScrollTrigger,
-ParticlesJs
+ParticlesJs.
+
+Design by me.

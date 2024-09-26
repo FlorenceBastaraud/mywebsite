@@ -4,7 +4,7 @@
     "en": [
       {
         "name": "This.",
-        "link": "https://florence-b.com/",
+        "link": "",
         "github": "https://github.com/FlorenceBastaraud/mywebsite",
         "description": "My personal website",
         "thumbnail": "mywebsite.png",
@@ -17,7 +17,7 @@
         "name": "Zobbies",
         "link": "https://zobbies-client.onrender.com",
         "github": "https://github.com/FlorenceBastaraud/zobbies",
-        "description": "Hobbies-based social network with authentication system and instant chat channels.",
+        "description": "Hobbies-based social network with authentication system and multi-users live channels.",
         "thumbnail": "zobbies.png",
         "technologies": {
           "string": "Vanilla Javascript, Sass, Html, Express, Socket.io",
@@ -47,7 +47,7 @@
         "name": "LibraryBlooms",
         "link": "https://florencebastaraud.github.io/libraryblooms/",
         "github": "https://github.com/FlorenceBastaraud/libraryblooms",
-        "description": "Book web application that offers a random selection of books (with choice of genres or not), with the possibility to send the selection of books to our email box or to send it to friends.",
+        "description": "A digital platform that offers a random selection of books, with the option to choose genres and send them to yourself and/or friends.",
         "thumbnail": "libraryblooms.png",
         "technologies": {
           "string": "Html/Sass, TypeScript, ReactJs, Gsap.",
@@ -82,7 +82,7 @@
         "name": "Zobbies",
         "link": "https://zobbies-client.onrender.com",
         "github": "https://github.com/FlorenceBastaraud/zobbies",
-        "description": "Réseau social basé sur des centres d'intérêts, avec systême d'authentification et des channels de discussions instantannée.",
+        "description": "Réseau social basé sur des centres d'intérêts, avec un système d'authentification et des channels de discussions instantanées multi-utilisateurs.",
         "thumbnail": "zobbies.png",
         "technologies": {
           "string": "Vanilla Javascript, Sass, Html, Express, Socket.io",
@@ -112,7 +112,7 @@
         "name": "LibraryBlooms",
         "link": "https://florencebastaraud.github.io/libraryblooms/",
         "github": "https://github.com/FlorenceBastaraud/libraryblooms",
-        "description": "Application web de livre qui propose une sélection aléatoire d'ouvrage (avec choix de genres ou pas), avec possibilité de s'envoyer la sélection de livre ou de l'envoyer à des amis.",
+        "description": "Une plateforme numérique qui offre une sélection aléatoire de livres, avec la possibilité de choisir les genres et de les envoyer à vous-même ou à des amis.",
         "thumbnail": "libraryblooms.png",
         "technologies": {
           "string": "Html/Sass, TypeScript, ReactJs, Gsap.",

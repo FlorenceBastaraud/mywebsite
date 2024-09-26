@@ -876,7 +876,8 @@
 }
 .main__projects--wrapper .projects__flux--item .content__infos--description {
   font-style: italic;
-  font-size: 1rem;
+  font-size: 0.875rem;
+  line-height: 1rem;
 }
 .main__projects--wrapper .projects__flux--item .content__infos--stack {
   font-weight: 400;
@@ -902,9 +903,9 @@
   scale: 1.1;
 }
 .main__projects--wrapper .projects__flux--item .content__links .github:hover {
-  background-color: #a0e9b0;
-  border-color: #a0e9b0;
-  color: #fcf6f6;
+  background-color: transparent;
+  border-color: #00e13d;
+  color: #171717;
 }
 
 *, *::before, *::after {
