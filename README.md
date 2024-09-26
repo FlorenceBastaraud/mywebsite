@@ -1,10 +1,10 @@
 # My personal website
 
 Made with:
-- Html/css/Sass,
-- Javascript,
-- Gsap,
-- ScrollTrigger,
-- ParticlesJs,
+- Html/Css/Sass
+- Javascript
+- Gsap
+- ScrollTrigger
+- ParticlesJs
 
 Designed by me.
