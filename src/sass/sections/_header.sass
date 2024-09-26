@@ -62,14 +62,37 @@
           @include media-query(840px)
             font-size: toRem(13)
 
-      select
-        background: none
-        outline: none
-        border: none
-        color: $color
-        cursor: pointer
+      .select
+        position: relative
 
-        option
-          background: $background
+        &::after
+          content: "▼"
+          position: absolute
+          font-size: toRem(10)
+          top: toRem(8)
+          right: - toRem(16)
+
+          @include media-query(840px)
+            right: unset
+            top: toRem(6)
+            left: - toRem(16)
+        
+        select
+          -webkit-appearance: none
+          appearance: none
+          background: none
+          border: none
+          border-bottom: 1px solid $accent
+          padding: 0
+          outline: none
           color: $color
           cursor: pointer
+
+          &::-ms-expand
+            display: none
+
+          option
+            padding: 0
+            background: $background
+            color: $color
+            cursor: pointer

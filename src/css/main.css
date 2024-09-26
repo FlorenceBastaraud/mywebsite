@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .wrapper {
   width: 100%;
   max-width: 1280px;
@@ -257,14 +258,39 @@
     font-size: 0.8125rem;
   }
 }
-.header__content--nav select {
+.header__content--nav .select {
+  position: relative;
+}
+.header__content--nav .select::after {
+  content: "▼";
+  position: absolute;
+  font-size: 0.625rem;
+  top: 0.5rem;
+  right: -1rem;
+}
+@media (max-width: 840px) {
+  .header__content--nav .select::after {
+    right: unset;
+    top: 0.375rem;
+    left: -1rem;
+  }
+}
+.header__content--nav .select select {
+  -webkit-appearance: none;
+  appearance: none;
   background: none;
-  outline: none;
   border: none;
+  border-bottom: 1px solid #00e13d;
+  padding: 0;
+  outline: none;
   color: #fcf6f6;
   cursor: pointer;
 }
-.header__content--nav select option {
+.header__content--nav .select select::-ms-expand {
+  display: none;
+}
+.header__content--nav .select select option {
+  padding: 0;
   background: #171717;
   color: #fcf6f6;
   cursor: pointer;

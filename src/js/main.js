@@ -461,9 +461,11 @@ document.addEventListener('DOMContentLoaded', () => {
   languageSwitcher.addEventListener('change', (event) => {
     const selectedLanguage = event.target.value
     translatePage(selectedLanguage)
+    localStorage.setItem('preferred-lang', selectedLanguage)
   })
 
-  translatePage('en')
+  const savedLang = localStorage.getItem('preferred-lang') || 'en'
+  translatePage(savedLang)
 })
 
 // back to top
