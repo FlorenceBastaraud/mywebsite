@@ -7,4 +7,4 @@ Made with:
 - ScrollTrigger,
 - ParticlesJs,
 
-Design by me.
+Designed by me.
