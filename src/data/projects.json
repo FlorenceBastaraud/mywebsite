@@ -112,7 +112,7 @@
         "name": "LibraryBlooms",
         "link": "https://florencebastaraud.github.io/libraryblooms/",
         "github": "https://github.com/FlorenceBastaraud/libraryblooms",
-        "description": "Une plateforme numérique qui offre une sélection aléatoire de livres, avec la possibilité de choisir les genres et de les envoyer à vous-même ou à des amis.",
+        "description": "Une plateforme numérique qui offre une sélection aléatoire de livres, avec la possibilité de choisir les genres et de les envoyer à vous-même et/ou à des amis.",
         "thumbnail": "libraryblooms.png",
         "technologies": {
           "string": "Html/Sass, TypeScript, ReactJs, Gsap.",

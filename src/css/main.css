@@ -877,7 +877,7 @@
 .main__projects--wrapper .projects__flux--item .content__infos--description {
   font-style: italic;
   font-size: 0.875rem;
-  line-height: 1rem;
+  line-height: 1.0625rem;
 }
 .main__projects--wrapper .projects__flux--item .content__infos--stack {
   font-weight: 400;
