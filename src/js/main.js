@@ -464,7 +464,8 @@ document.addEventListener('DOMContentLoaded', () => {
     localStorage.setItem('preferred-lang', selectedLanguage)
   })
 
-  const savedLang = localStorage.getItem('preferred-lang') || 'en'
+  // const savedLang = localStorage.getItem('preferred-lang') || 'en'
+  translatePage('en')
   translatePage(savedLang)
 })
 
