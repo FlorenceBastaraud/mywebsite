@@ -465,8 +465,8 @@ document.addEventListener('DOMContentLoaded', () => {
   })
 
   // const savedLang = localStorage.getItem('preferred-lang') || 'en'
+  // translatePage(savedLang)
   translatePage('en')
-  translatePage(savedLang)
 })
 
 // back to top
