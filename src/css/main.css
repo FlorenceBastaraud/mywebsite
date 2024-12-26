@@ -153,6 +153,15 @@
   color: #171717;
 }
 
+.demo {
+  background: none;
+  color: #000;
+}
+.demo:hover {
+  background-color: #00e13d;
+  color: #fcf6f6;
+}
+
 .back-to-top {
   position: fixed;
   bottom: 1.25rem;
@@ -852,6 +861,7 @@
 .main__projects--wrapper .projects__flux--item .image {
   width: 200px;
   min-height: 200px;
+  max-height: 200px;
   height: 100%;
   overflow: hidden;
 }

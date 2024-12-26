@@ -1,10 +1,31 @@
 {
-  "total": 5,
+  "total": 6,
   "data": {
     "en": [
       {
+        "name": "SwiftRide",
+        "link": null,
+        "demo": null,
+        "github": "https://github.com/FlorenceBastaraud/swiftride",
+        "description": "One-stop shop for rollers, skateboards, bikes, and all the equipment you need to ride in style and safety!",
+        "thumbnail": "swiftride-full.png",
+        "technologies": {
+          "string": "NextJs, Typescript, Tailwind, Strapi, Stripe.",
+          "tags": [
+            "html",
+            "css",
+            "tailwind",
+            "typescript",
+            "nextjs",
+            "strapi",
+            "stripe"
+          ]
+        }
+      },
+      {
         "name": "This.",
-        "link": "",
+        "link": null,
+        "demo": null,
         "github": "https://github.com/FlorenceBastaraud/mywebsite",
         "description": "My personal website",
         "thumbnail": "mywebsite.png",
@@ -16,6 +37,7 @@
       {
         "name": "Zobbies",
         "link": "https://zobbies-client.onrender.com",
+        "demo": null,
         "github": "https://github.com/FlorenceBastaraud/zobbies",
         "description": "Hobbies-based social network with authentication system and multi-users live channels.",
         "thumbnail": "zobbies.png",
@@ -35,6 +57,7 @@
       {
         "name": "DiceFall",
         "link": "https://florencebastaraud.github.io/dicefall/",
+        "demo": null,
         "github": "https://github.com/FlorenceBastaraud/dicefall",
         "description": "Virtual dice roll. The game is won when all 10 dices show the same number.",
         "thumbnail": "dicefall.png",
@@ -46,6 +69,7 @@
       {
         "name": "LibraryBlooms",
         "link": "https://florencebastaraud.github.io/libraryblooms/",
+        "demo": null,
         "github": "https://github.com/FlorenceBastaraud/libraryblooms",
         "description": "A digital platform that offers a random selection of books, with the option to choose genres and send them to yourself and/or friends.",
         "thumbnail": "libraryblooms.png",
@@ -57,6 +81,7 @@
       {
         "name": "ChuckMania",
         "link": "https://florencebastaraud.github.io/converses-landing-page/",
+        "demo": null,
         "github": "https://github.com/FlorenceBastaraud/converses-landing-page",
         "description": "Sneakers website Landing page.",
         "thumbnail": "converses-landing-page.png",
@@ -68,8 +93,29 @@
     ],
     "fr": [
       {
+        "name": "SwiftRide",
+        "link": null,
+        "demo": null,
+        "github": "https://github.com/FlorenceBastaraud/swiftride",
+        "description": "Un guichet unique pour les rollers, les skateboards, les vélos et tout l'équipement dont vous avez besoin pour rouler avec style et sécurité !",
+        "thumbnail": "swiftride-full.png",
+        "technologies": {
+          "string": "NextJs, Typescript, Tailwind, Strapi, Stripe.",
+          "tags": [
+            "html",
+            "css",
+            "tailwind",
+            "typescript",
+            "nextjs",
+            "strapi",
+            "stripe"
+          ]
+        }
+      },
+      {
         "name": "Ce site.",
         "link": "",
+        "demo": null,
         "github": "https://github.com/FlorenceBastaraud/mywebsite",
         "description": "Mon site personnel",
         "thumbnail": "mywebsite.png",
@@ -81,6 +127,7 @@
       {
         "name": "Zobbies",
         "link": "https://zobbies-client.onrender.com",
+        "demo": null,
         "github": "https://github.com/FlorenceBastaraud/zobbies",
         "description": "Réseau social basé sur des centres d'intérêts, avec un système d'authentification et des channels de discussions instantanées multi-utilisateurs.",
         "thumbnail": "zobbies.png",
@@ -100,6 +147,7 @@
       {
         "name": "DiceFall",
         "link": "https://florencebastaraud.github.io/dicefall/",
+        "demo": null,
         "github": "https://github.com/FlorenceBastaraud/dicefall",
         "description": "Réalisation d'un jeu de lancer de dés virtuel. Le jeu se gagne lorsque l'ensemble des 10 dés affichent le même chiffre.",
         "thumbnail": "dicefall.png",
@@ -111,6 +159,7 @@
       {
         "name": "LibraryBlooms",
         "link": "https://florencebastaraud.github.io/libraryblooms/",
+        "demo": null,
         "github": "https://github.com/FlorenceBastaraud/libraryblooms",
         "description": "Une plateforme numérique qui offre une sélection aléatoire de livres, avec la possibilité de choisir les genres et de les envoyer à vous-même et/ou à des amis.",
         "thumbnail": "libraryblooms.png",
@@ -122,6 +171,7 @@
       {
         "name": "ChuckMania",
         "link": "https://florencebastaraud.github.io/converses-landing-page/",
+        "demo": null,
         "github": "https://github.com/FlorenceBastaraud/converses-landing-page",
         "description": "Landing page d'un site de converse sneakers.",
         "thumbnail": "converses-landing-page.png",

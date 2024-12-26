@@ -335,7 +335,9 @@ document.addEventListener('DOMContentLoaded', () => {
       const github = project.github
         ? `<a href="${project.github}" class="github secondary-cta" title="View project files" target="_blank">Git</a>`
         : ``
-      const link = project.link
+      const link = project.demo
+        ? `<a href="${project.demo}" class="demo primary-cta" title="View Demo" target="_blank">Demo</a>`
+        : project.link
         ? `<a href="${project.link}" class="live primary-cta" title="View live" target="_blank">Live</a>`
         : ``
 
