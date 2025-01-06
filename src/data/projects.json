@@ -7,7 +7,7 @@
         "link": null,
         "demo": null,
         "github": "https://github.com/FlorenceBastaraud/swiftride",
-        "description": "One-stop shop for rollers, skateboards, bikes, and all the equipment you need to ride in style and safety!",
+        "description": "E-commerce site dedicated to board sports equipment (skateboards, rollerblades, bikes.)",
         "thumbnail": "swiftride-full.png",
         "technologies": {
           "string": "NextJs, Typescript, Tailwind, Strapi, Stripe.",
@@ -97,7 +97,7 @@
         "link": null,
         "demo": null,
         "github": "https://github.com/FlorenceBastaraud/swiftride",
-        "description": "Un guichet unique pour les rollers, les skateboards, les vélos et tout l'équipement dont vous avez besoin pour rouler avec style et sécurité !",
+        "description": "Site e-commerce dédié à la vente d'équipements de sport de glisse (skateboards, rollers, Vélos.)",
         "thumbnail": "swiftride-full.png",
         "technologies": {
           "string": "NextJs, Typescript, Tailwind, Strapi, Stripe.",
