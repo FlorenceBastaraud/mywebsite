@@ -3,6 +3,11 @@
   "years": 4,
   "data": [
     {
+      "date": "Octobre 2024 - Présent",
+      "society": "Activité Freelance",
+      "description": "Conception et développement de sites web (vitrine, e-commerce..) • Technos utilisées: Html, Css, Sass, TailwindCSS, Javascript, Typescript, ReactJs, NextJs, PHP, CMSs, Headless CMSs."
+    },
+    {
       "date": "Février 2023 - Mai 2024 (1 an et 4 mois)",
       "society": "Epresspack",
       "description": "Développeuse web front pour divers clients de l'entreprise. Build. Debuggage. Daily meetings. • Technos utilisées: Javascript, Php, Html/Css, Sass, Vue.js, Jquery."
