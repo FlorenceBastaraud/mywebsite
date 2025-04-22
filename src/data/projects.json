@@ -7,7 +7,7 @@
         "link": null,
         "demo": null,
         "github": "https://github.com/FlorenceBastaraud/swiftride",
-        "description": "E-commerce site dedicated to board sports equipment (skateboards, rollerblades, bikes.)",
+        "description": "E-commerce site dedicated to board sports equipment (skateboards, rollerblades, bikes.).",
         "thumbnail": "swiftride-full.png",
         "technologies": {
           "string": "NextJs, Typescript, Tailwind, Strapi, Stripe.",
@@ -27,7 +27,7 @@
         "link": null,
         "demo": null,
         "github": "https://github.com/FlorenceBastaraud/mywebsite",
-        "description": "My personal website",
+        "description": "My personal website.",
         "thumbnail": "mywebsite.png",
         "technologies": {
           "string": "Html, Sass, Javascript",
@@ -97,7 +97,7 @@
         "link": null,
         "demo": null,
         "github": "https://github.com/FlorenceBastaraud/swiftride",
-        "description": "Site e-commerce dédié à la vente d'équipements de sport de glisse (skateboards, rollers, Vélos.)",
+        "description": "Site e-commerce dédié à la vente d'équipements de sport de glisse (skateboards, rollers, Vélos.).",
         "thumbnail": "swiftride-full.png",
         "technologies": {
           "string": "NextJs, Typescript, Tailwind, Strapi, Stripe.",
@@ -117,7 +117,7 @@
         "link": "",
         "demo": null,
         "github": "https://github.com/FlorenceBastaraud/mywebsite",
-        "description": "Mon site personnel",
+        "description": "Mon site personnel.",
         "thumbnail": "mywebsite.png",
         "technologies": {
           "string": "Html, Sass, Javascript",
