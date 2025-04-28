@@ -36,7 +36,7 @@
       },
       {
         "name": "Zobbies",
-        "link": "https://zobbies-client.onrender.com",
+        "link": null,
         "demo": null,
         "github": "https://github.com/FlorenceBastaraud/zobbies",
         "description": "Hobbies-based social network with authentication system and multi-users live channels.",
@@ -126,7 +126,7 @@
       },
       {
         "name": "Zobbies",
-        "link": "https://zobbies-client.onrender.com",
+        "link": null,
         "demo": null,
         "github": "https://github.com/FlorenceBastaraud/zobbies",
         "description": "Réseau social basé sur des centres d'intérêts, avec un système d'authentification et des channels de discussions instantanées multi-utilisateurs.",
